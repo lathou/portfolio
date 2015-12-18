@@ -1,0 +1,86 @@
+body{
+	background-color : #F7F7F7;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size : 20px;
+	text-align: center;
+}
+
+img{
+	width : 100%;
+}
+
+.btn{
+	margin : 20px;
+}
+
+
+/********************* Navbar *******************/
+
+.navbar-inverse .navbar-nav>li>a{	
+	width : 110px;
+	height : 60px;
+	padding-top : 20px;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover{
+	cursor : pointer;
+	background-color: #EC167A;	
+}
+
+.navbar-header{
+	padding : 0px;
+}
+
+.navbar-inverse .navbar-brand{
+	color : #E4E4E4;
+	font-size : 40px;
+	cursor : pointer;
+	font-family: 'Tulpen One', cursive;
+	padding : 20px 0px;
+	text-align: left;
+}
+
+.navbar{
+	height : 60px;
+}
+
+/**************** Section ****************/
+
+#qui-suis-je, #portfolio , #contact{
+	border-bottom: 3px solid #ECECEC;
+	padding : 40px 0px 100px;
+}
+
+h1{
+	color : #EC167A;
+	margin-bottom: 40px;
+}
+
+/**************** Portfolio ****************/
+
+#portfolio>h1{
+	margin-bottom: 0px;
+}
+
+.thumbnails{
+	padding : 40px 0px;
+}
+
+
+/***************** Contact *****************/
+
+textarea.form-control{
+	height : 215px;
+}
+
+label{
+	margin-bottom: 0px;
+}
+
+/************* Footer *****************/
+
+footer>div{
+	background-color: #222;
+	color : #9d9d9d;
+	height: 100px;
+}

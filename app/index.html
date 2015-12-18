@@ -3,9 +3,120 @@
 	<head>
 		<title>PORTFOLIO | Nathalie TK</title>
 		<meta charset="UTF-8"/>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Tulpen+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles/bootstrap.min.css"/>
+		<link rel="stylesheet" href="styles/style.css"/>
 	</head>
 
-	<body>
+	<body data-spy="scroll" data-target=".navbar">
+		<nav class="navbar navbar-inverse navbar-fixed-top ">
+			<div class="navbar-header col-md-offset-2 col-md-2">
+				<a class="navbar-brand">Nathalie TK</a>
+			</div>
+
+			<ul class="nav navbar-nav col-md-6">
+				<li class="col-md-offset-4 col-md-2 active"><a href="#accueil">Accueil</a></li>
+				<li class="col-md-2"><a href="#qui-suis-je">Qui suis-je?</a></li>
+				<li class="col-md-2"><a href="#portfolio">Portfolio</a></li>
+				<li class="col-md-2"><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+
+		<section>
+			<div id="accueil">
+				<img alt="image" src="img/fond.jpg"/>
+			</div>
+
+			<div id="qui-suis-je" class="col-md-offset-2 col-md-8 text-justify">
+				<h1 class="text-center">QUI SUIS-JE?</h1>
+				<p>Ex-opticienne, il a toujours été dans ma personnalité de vouloir créer, construire des choses de mes propres mains. Ne trouvant plus satisfaction dans mon ancien métier, j'ai entrepris une reconversion dans un domaine qui me correspond bien plus : <strong>le développement web</strong>.</p>
+				<p>C'est dans ce but que j'ai suivi une formation en autodidacte qui m'a permise d'acquerir des connaissances sur différents languages, surtout sur le HTML5, CSS3 et JavaScript, mais également sur PHP, MySQL, Java. Plus précisément, je suis attirée par le métier de développeuse <strong>front-end</strong>.</p>
+				<p>Persuadée qu'une évolution sera bien plus rapide avec de la pratique, je suis sans cesse à la recherche de nouveaux projets, pour ainsi pouvoir développer mes compétences et apprendre toujours plus !</p>
+				<div class="col-md-offset-5 col-md-2 text-center"><button type="button" class="btn btn-default btn-lg">Voir mon CV</button></div>
+			</div>
+
+			<div id="portfolio" class="col-md-offset-2 col-md-8">
+				<h1>PORTFOLIO</h1>
+				<p>Mes projets et réalisations :</p>
+				<div class="thumbnails">
+					<div class="col-md-4">
+						<img src="img/majolie2.jpg">
+						<p>Merci-MaJolie</p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/majolie2.jpg">
+						<p>Merci-MaJolie</p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/majolie2.jpg">
+						<p>Merci-MaJolie</p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/majolie2.jpg">
+						<p>Merci-MaJolie</p>
+					</div>	
+					<div class="col-md-4">
+						<img src="img/majolie2.jpg">
+						<p>Merci-MaJolie</p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/majolie2.jpg">
+						<p>Merci-MaJolie</p>
+					</div>
+		
+
+				</div>
+			</div>
+
+			<div id="contact" class="col-md-offset-2 col-md-8">
+				<h1>CONTACT</h1>
+				<form method="post" action="">	
+					<div class="form-group col-md-5">
+						<label for="nom" class="col-md-12 form-label text-left">Votre nom</label>
+						<input type="text" maxlength="40" name="nom" id="nom" class="form-control" required/>
+						</br>
+
+						<label for="prenom" class="col-md-12 form-label text-left">Votre prénom</label>
+						<input type="text" maxlength="40" name="prenom" id="prenom" class="form-control" required/>
+						</br>
+
+						<label for="mail" class="col-md-12 form-label text-left">Votre e-mail</label>
+						<input type="text" maxlength="80" name="mail" id="mail" class="form-control" required/>
+						</br>				
+					</div>
+
+					<div class="form-group col-md-7">
+						<label for="message" class="col-md-12 form-label text-left">Votre message</label>
+						<textarea name="message" id="message" class="form-control" required></textarea>
+					</div>
+
+					<button type="button" class="col-md-offset-5 col-md-2 btn btn-default">Envoyer</button>
+				</form>
+			</div>
+		</section>
+
+		<footer>
+			<div class="col-md-12">
+				Nathalie
+			</div>
+		</footer>
+
+		<!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script>
+    	// Scrollspy fluide
+	      $(function () {
+	        $('header a').on('click', function(e) {
+	          e.preventDefault();
+	          var hash = this.hash;
+	          $('html, body').animate({
+	            scrollTop: $(this.hash).offset().top
+	          }, 1000, function(){
+	            window.location.hash = hash;
+	          });
+	        });
+	      });
+	    </script>-->
 	</body>
 </html>
