@@ -48,12 +48,18 @@ img{
 
 #qui-suis-je, #portfolio , #contact{
 	border-bottom: 3px solid #ECECEC;
-	padding : 40px 0px 100px;
+	padding : 80px 0px 100px;
+	margin-top : -40px;
 }
 
 h1{
 	color : #EC167A;
 	margin-bottom: 40px;
+}
+
+/**************** Qui-suis-je ****************/
+#cv{
+	margin-top : 50px;
 }
 
 /**************** Portfolio ****************/

@@ -9,19 +9,21 @@
 		<link rel="stylesheet" href="styles/style.css"/>
 	</head>
 
-	<body data-spy="scroll" data-target=".navbar">
-		<nav class="navbar navbar-inverse navbar-fixed-top ">
-			<div class="navbar-header col-md-offset-2 col-md-2">
-				<a class="navbar-brand">Nathalie TK</a>
-			</div>
+	<body id="top-page" data-spy="scroll" data-target=".navbar">
+		<header>
+			<nav class="navbar navbar-inverse navbar-fixed-top ">
+				<div class="navbar-header col-md-offset-2 col-md-2">
+					<a class="navbar-brand" href="#top-page">Nathalie TK</a>
+				</div>
 
-			<ul class="nav navbar-nav col-md-6">
-				<li class="col-md-offset-4 col-md-2 active"><a href="#accueil">Accueil</a></li>
-				<li class="col-md-2"><a href="#qui-suis-je">Qui suis-je?</a></li>
-				<li class="col-md-2"><a href="#portfolio">Portfolio</a></li>
-				<li class="col-md-2"><a href="#contact">Contact</a></li>
-			</ul>
-		</nav>
+				<ul class="nav navbar-nav col-md-6">
+					<li class="col-md-offset-4 col-md-2"><a href="#accueil">Accueil</a></li>
+					<li class="col-md-2"><a href="#qui-suis-je">Qui suis-je?</a></li>
+					<li class="col-md-2"><a href="#portfolio">Portfolio</a></li>
+					<li class="col-md-2"><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 
 		<section>
 			<div id="accueil">
@@ -31,9 +33,9 @@
 			<div id="qui-suis-je" class="col-md-offset-2 col-md-8 text-justify">
 				<h1 class="text-center">QUI SUIS-JE?</h1>
 				<p>Ex-opticienne, il a toujours été dans ma personnalité de vouloir créer, construire des choses de mes propres mains. Ne trouvant plus satisfaction dans mon ancien métier, j'ai entrepris une reconversion dans un domaine qui me correspond bien plus : <strong>le développement web</strong>.</p>
-				<p>C'est dans ce but que j'ai suivi une formation en autodidacte qui m'a permise d'acquerir des connaissances sur différents languages, surtout sur le HTML5, CSS3 et JavaScript, mais également sur PHP, MySQL, Java. Plus précisément, je suis attirée par le métier de développeuse <strong>front-end</strong>.</p>
+				<p>Plus précisément, je suis attirée par le métier de développeuse <strong>front-end</strong>. J'ai donc suivi une formation en autodidacte qui m'a permise d'acquerir des connaissances sur différents languages, tels que HTML5, CSS3 et JavaScript, mais également quelques notions de PHP, MySQL, Java.</p>
 				<p>Persuadée qu'une évolution sera bien plus rapide avec de la pratique, je suis sans cesse à la recherche de nouveaux projets, pour ainsi pouvoir développer mes compétences et apprendre toujours plus !</p>
-				<div class="col-md-offset-5 col-md-2 text-center"><button type="button" class="btn btn-default btn-lg">Voir mon CV</button></div>
+				<div class="col-md-offset-5 col-md-2 text-center"><button type="button" id="cv" class="btn btn-default btn-lg">Voir mon CV</button></div>
 			</div>
 
 			<div id="portfolio" class="col-md-offset-2 col-md-8">
@@ -41,28 +43,28 @@
 				<p>Mes projets et réalisations :</p>
 				<div class="thumbnails">
 					<div class="col-md-4">
-						<img src="img/majolie2.jpg">
+						<img src="img/majolie.jpg">
 						<p>Merci-MaJolie</p>
 					</div>
 					<div class="col-md-4">
-						<img src="img/majolie2.jpg">
-						<p>Merci-MaJolie</p>
+						<img src="img/memots.jpg">
+						<p>Mé-Mots</p>
 					</div>
 					<div class="col-md-4">
-						<img src="img/majolie2.jpg">
-						<p>Merci-MaJolie</p>
+						<img src="img/noir.jpg">
+						<p>*****</p>
 					</div>
 					<div class="col-md-4">
-						<img src="img/majolie2.jpg">
-						<p>Merci-MaJolie</p>
+						<img src="img/noir.jpg">
+						<p>*****</p>
 					</div>	
 					<div class="col-md-4">
-						<img src="img/majolie2.jpg">
-						<p>Merci-MaJolie</p>
+						<img src="img/noir.jpg">
+						<p>*****</p>
 					</div>
 					<div class="col-md-4">
-						<img src="img/majolie2.jpg">
-						<p>Merci-MaJolie</p>
+						<img src="img/noir.jpg">
+						<p>*****</p>
 					</div>
 		
 
@@ -81,7 +83,7 @@
 						<input type="text" maxlength="40" name="prenom" id="prenom" class="form-control" required/>
 						</br>
 
-						<label for="mail" class="col-md-12 form-label text-left">Votre e-mail</label>
+						<label for="mail" class="col-md-12 form-label text-left">Votre adresse e-mail</label>
 						<input type="text" maxlength="80" name="mail" id="mail" class="form-control" required/>
 						</br>				
 					</div>
@@ -102,7 +104,7 @@
 			</div>
 		</footer>
 
-		<!--<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script>
     	// Scrollspy fluide
@@ -117,6 +119,6 @@
 	          });
 	        });
 	      });
-	    </script>-->
+	    </script>
 	</body>
 </html>
