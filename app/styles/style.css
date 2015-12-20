@@ -16,10 +16,14 @@ img{
 
 /********************* Navbar *******************/
 
+.navbar-inverse .navbar-nav>li, .navbar-inverse .navbar-nav{	
+	padding : 0px;
+	background-color: #222;
+}
+
 .navbar-inverse .navbar-nav>li>a{	
-	width : 110px;
 	height : 60px;
-	padding-top : 20px;
+	padding : 20px 0px 0px 0px;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover{
@@ -43,6 +47,7 @@ img{
 .navbar{
 	height : 60px;
 }
+
 
 /**************** Section ****************/
 
@@ -74,18 +79,23 @@ h1{
 }
 
 .thumbnails{
-	padding : 40px 0px;
+	padding-top: 30px;
+}
+
+.thumbnail{
+	background-color: #F7F7F7;
+	border : none;
 }
 
 .thumbnails img{
-	margin-bottom: 30px;
+	width : 95%;
 }
 
 .info{
 	font-size: 14px;
 	font-style : italic;
-	line-height: 1px;
-	margin-bottom: 20px;
+	margin-top : -10px;
+	margin-bottom: 0px
 }
 
 /***************** Contact *****************/
@@ -106,3 +116,35 @@ footer>div{
 	height: 100px;
 }
 
+
+
+/**************************RESPONSIVE*******************/
+
+/*tablettes*/
+@media screen and (max-width : 991px){
+	.navbar-inverse .navbar-brand{
+		padding : 20px 20px;
+	}
+
+	#qui-suis-je, #portfolio , #contact{
+	padding : 80px 20px 100px 20px;
+	}
+
+	.thumbnails>div{
+		padding : 0px 10px;
+	}
+}
+
+/*Pour portables*/
+@media screen and (max-width : 767px){
+	.navbar-inverse .navbar-nav{
+		padding : 10px 0px;
+	}
+	.navbar-inverse .navbar-nav>li>a{	
+		height : inherit;
+		padding : 10px;
+	}
+	.navbar-inverse .navbar-nav>li>a:hover{	
+		background-color: rgba(236,22,122,0.1);
+	}
+}
