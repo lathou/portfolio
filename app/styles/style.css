@@ -68,10 +68,25 @@ h1{
 	margin-bottom: 0px;
 }
 
+#portfolio a{
+	text-decoration: none;
+	color : #000;
+}
+
 .thumbnails{
 	padding : 40px 0px;
 }
 
+.thumbnails img{
+	margin-bottom: 30px;
+}
+
+.info{
+	font-size: 14px;
+	font-style : italic;
+	line-height: 1px;
+	margin-bottom: 20px;
+}
 
 /***************** Contact *****************/
 
@@ -90,3 +105,4 @@ footer>div{
 	color : #9d9d9d;
 	height: 100px;
 }
+
