@@ -35,7 +35,19 @@
 				<p>Ex-opticienne, il a toujours été dans ma personnalité de vouloir créer, construire des choses de mes propres mains. Ne trouvant plus satisfaction dans mon ancien métier, j'ai entrepris une reconversion dans un domaine qui me correspond bien plus : <strong>le développement web</strong>.</p>
 				<p>Plus précisément, je suis attirée par le métier de développeuse <strong>front-end</strong>. J'ai donc suivi une formation en autodidacte qui m'a permise d'acquerir des connaissances sur différents languages, tels que HTML5, CSS3 et JavaScript, mais également quelques notions de PHP, MySQL, Java.</p>
 				<p>Persuadée qu'une évolution sera bien plus rapide avec de la pratique, je suis sans cesse à la recherche de nouveaux projets, pour ainsi pouvoir développer mes compétences et apprendre toujours plus !</p>
-				<div class="col-md-offset-5 col-md-2 text-center"><button type="button" id="cv" class="btn btn-default btn-lg">Voir mon CV</button></div>
+				<div class="col-md-offset-5 col-md-2 text-center">
+					<button type="button" data-toggle="modal" data-target="#modal" id="cv" class="btn btn-default btn-lg">Voir mon CV</button>
+				</div>
+				<div class="modal fade" id="modal">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-body">
+								<button class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>
+								<img src="img/cv.jpg"/>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div id="portfolio" class="col-md-offset-2 col-md-8">
@@ -106,6 +118,7 @@
 
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script src="js/main.js"></script>
 		<script>
     	// Scrollspy fluide
 	      $(function () {
