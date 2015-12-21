@@ -10,16 +10,25 @@ function resizeThumbnails(){
 
 	for(var i = 0; i<thumbnails.length; i++){
 		thumbnails[i].style.height = 'auto';
-	}
-
-	for(var i = 0; i<thumbnails.length; i++){
 		if(thumbnails[i].offsetHeight > maxHeight){
 			maxHeight = thumbnails[i].offsetHeight;
 		}
 	}
 
-	console.log('maxHeight : ' + maxHeight);
 	for(var i = 0; i<thumbnails.length; i++){
 		thumbnails[i].style.height = maxHeight+ "px";
 	}
+}
+
+
+//Fermeture du menu responsive lors d'un click sur un onglet
+
+var navbar = document.querySelector('.navbar-collapse');
+var liMenu = navbar.querySelectorAll('li');
+
+for(var i = 0; i<liMenu.length; i++){
+	liMenu[i].addEventListener('click', function(){
+		navbar.className = 'navbar-collapse collapse';
+		navbar.setAttribute('aria-expanded', 'false');
+	}, false);
 }
