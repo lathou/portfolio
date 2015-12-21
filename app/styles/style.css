@@ -85,10 +85,16 @@ h1{
 .thumbnail{
 	background-color: #F7F7F7;
 	border : none;
+	margin-bottom: 0px;
+	padding-bottom: 20px;
 }
 
 .thumbnails img{
 	width : 95%;
+}
+
+.thumbnail .caption{
+	padding : 0px;
 }
 
 .info{
@@ -128,10 +134,6 @@ footer>div{
 
 	#qui-suis-je, #portfolio , #contact{
 	padding : 80px 20px 100px 20px;
-	}
-
-	.thumbnails>div{
-		padding : 0px 10px;
 	}
 }
 
