@@ -55,10 +55,16 @@ a, a:hover, a:visited{
 
 .navbar{
 	height : 60px;
+	box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
 }
 
 
 /**************** Section ****************/
+
+#accueil{
+	padding-top:80px;
+	margin-top: -20px;
+}
 
 #qui-suis-je, #portfolio , #contact{
 	border-bottom: 3px solid #ECECEC;
@@ -148,9 +154,12 @@ h1{
 }
 
 /***************** Contact *****************/
+#contact input[type='text']{
+	margin-bottom: 15px;
+}
 
-textarea.form-control{
-	height : 215px;
+#contact textarea.form-control{
+	height : 190px;
 }
 
 label{
