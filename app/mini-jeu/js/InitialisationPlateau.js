@@ -111,7 +111,7 @@ function Joueur(nom, cote){
 
 var joueurJaune = new Joueur('Joueur Jaune','gauche');
 var joueurBleu = new Joueur('Joueur Bleu','droite');
-joueurJaune.positionnement("img/joueurJaune.png");
+joueurJaune.positionnement("img/JoueurJaune.png");
 
 //positionnement du deuxième joueur : boucle jusqu'à trouver un position où bleu ne touche pas jaune
 while(!joueurBleu.xy || joueurBleu.xy === joueurJaune.xy-10 || joueurBleu.xy === joueurJaune.xy-9 || joueurBleu.xy === joueurJaune.xy-11 || 
