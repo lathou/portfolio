@@ -1,0 +1,159 @@
+body{
+	background-image : url("img/fond.jpg");
+	background-size: 100%;
+	font-family: 'Poiret One', cursive;
+	margin : 0px;
+}
+
+table{
+	margin : 0 auto;
+	text-align : center;
+	border-collapse: collapse;
+	margin-top : 15px;
+}
+
+td{
+	width : 59px;
+	height : 59px;
+	border : 1px solid #D0D0D0;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+img{
+	width : 100%;
+}
+
+.jouable.J{
+	border : 2px solid #FFCF41;
+	cursor : pointer;	
+	background-color: rgba(255, 207, 65, 0.2);
+}
+.jouable.J:hover{
+	background-color : rgba(255, 207, 65, 0.4); 
+}
+
+.jouable.B{
+	border : 2px solid #23AAFF;
+	background-color : rgba(34, 168, 252, 0.2); 
+	cursor : pointer;
+}
+
+.jouable.B:hover{
+	background-color : rgba(34, 168, 252, 0.4); 
+}
+
+.inaccessible{background-image : url("img/roche.png");}
+.Couteau{background-image: url("img/couteau.png")}
+.Gun{ background-image : url("img/revolver.png"); }
+.Fusil{ background-image : url("img/fusil.png"); }
+.Bazooka{background-image : url("img/bazooka.png");}
+.Mitraillette{background-image : url("img/mitraillette.png");}
+
+.caracteristiques{			
+	text-align : center;
+	background-color: rgba(0,0,0, 0.8);
+	border-radius: 15px;
+	padding: 20px;
+	margin: 20px;
+	box-shadow: 5px 5px 30px black;
+	width : 14%;
+}
+
+button{
+	margin : 40px 5px 5px 5px;
+	background-color : black;
+	padding : 10px 5px;
+	border : none;
+	border-radius: 5px;
+	font-family: 'Poiret One', cursive;
+	cursor : pointer;
+	font-size: 15px;
+}
+
+button:hover{
+	background-color : #0E0E0E;
+}
+
+button[disabled]{
+	opacity : 0.3;
+}
+
+button[disabled]:hover{
+	background-color : black;
+	cursor : default;
+}
+
+#gauche{
+	color : #FFCF41;
+	float : left;
+}
+
+#gauche button{
+	color:#FFCF41;
+}
+
+#droite{
+	color : #23AAFF;
+	float : right;
+}
+
+#droite button{
+	color:#23AAFF;
+}
+
+
+.pv{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+span{
+	position : relative;
+	bottom : 10px;
+	margin-left : -20px;
+	font-size : 22px;
+	font-weight: bold;
+}
+
+.imageArme, .imageBouclier{
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 10px;
+	width : 60px;
+	margin-bottom: 20px;
+}
+
+.actived{
+	opacity : 1;
+}
+
+.desactived{
+	opacity : 0.2;
+}
+
+#modal{
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 655px;
+	background-color: rgba(0,0,0,0.7);
+	z-index : 1000;
+}
+
+#modal-body{
+	width : 50%;
+	position : absolute;
+	top : 8%;
+	left : 22%;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 10px;
+	padding : 40px;
+	text-align : center;
+	font-size: 18px;
+}
+
+#modal-body button{
+	color : white;
+}

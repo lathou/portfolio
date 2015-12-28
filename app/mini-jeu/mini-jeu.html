@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Jeu de plateau</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="style.css">
+		<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	</head>
+
+	<body>
+		<div id="modal">
+			<div id="modal-body">
+				<h1>Bienvenue !</h1>
+				<p>Ce mini-jeu de combat est un projet que j'ai dû réaliser durant ma formation.</p>
+				<h3>Les règles du jeu :</h3>
+				<p>Elles sont simples ! Les joueurs peuvent avancer à tour de rôle. <br/>
+					Lorsqu'on tombe sur une case avec une arme, on récupère cette arme et dépose l'ancienne. Les armes ont des puissances différentes.<br/>
+					Lorsque les joueurs se retrouvent côte à côte, un combat à mort s'engage. <br/>
+					Deux choix se posent alors : Attaquer ou se défendre lors de la prochaine attaque.<br/>
+					Le joueur qui perd tous ses points de vie a perdu !</p>
+				<button id="lancer">Lancer le Jeu</button>
+			</div>
+		</div>
+		<div class="caracteristiques" id='gauche'>			
+			<div class="contenu"></div>
+			<div class="infoArme">
+				<img class="imageArme" src=" ">
+				<span></span>
+				<img class="imageBouclier" src="img/bouclier.png ">
+				<button id="btnAttaqueJ" type="button" disabled>Attaquer</button><button id="btnDefenseJ" type="button" disabled>Se défendre</button>
+			</div>
+		</div>
+
+		<div class="caracteristiques" id='droite'>		
+			<div class="contenu"></div>
+			<div class="infoArme">
+				<img class="imageArme" src=" ">
+				<span></span>	
+				<img class="imageBouclier" src="img/bouclier.png ">	
+				<button id="btnAttaqueB" type="button" disabled>Attaquer</button><button id="btnDefenseB" type="button" disabled>Se défendre</button>	
+			</div>
+		</div>
+
+		<table id="plateau"></table> 
+
+		<script src="js/InitialisationPlateau.js"></script>
+		<script src="js/Combat.js"></script>
+		<script src="js/Deplacement.js"></script>
+
+	</body>
+</html>
