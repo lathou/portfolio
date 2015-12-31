@@ -11,6 +11,9 @@ $(function(){
 	
 		for(var i = 0; i < thumbnails.length; i++){
 			thumbnails[i].style.height = 'auto';
+		}
+
+		for(var i = 0; i < thumbnails.length; i++){
 			if(thumbnails[i].offsetHeight > maxHeight){
 				maxHeight = thumbnails[i].offsetHeight;
 			}
