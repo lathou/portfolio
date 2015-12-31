@@ -2,7 +2,7 @@
 $(function(){
 	//Gestion des taille et alignement des thumbnails
 	
-	resizeThumbnails();
+	setTimout(resizeThumbnails, 2000);
 	window.addEventListener('resize', resizeThumbnails, false);
 
 	function resizeThumbnails(){
