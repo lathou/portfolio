@@ -1,7 +1,7 @@
 
 //Gestion des taille et alignement des thumbnails
 
-resizeThumbnails();
+setTimeout(resizeThumbnails, 500);
 window.addEventListener('resize', resizeThumbnails, false);
 
 function resizeThumbnails(){
@@ -10,6 +10,9 @@ function resizeThumbnails(){
 
 	for(var i = 0; i < thumbnails.length; i++){
 		thumbnails[i].style.height = 'auto';
+	}
+
+	for(var i = 0; i < thumbnails.length; i++){
 		if(thumbnails[i].offsetHeight > maxHeight){
 			maxHeight = thumbnails[i].offsetHeight;
 		}
