@@ -29,13 +29,15 @@ envoyer.addEventListener('click', function(){
 				}
 			}
 		},false);
+	}else{
+
 	}
 }, false);
 
 
 function verifierMail(mail){
 	var myRegex = /^[a-zA-Z0-9._\-]+@[a-zA-A0-9]+\.[a-zA-Z]{2,4}$/;
-	if(preg_match(myRegex, mail)){
+	if(myRegex.test(mail)){
 		return true;
 	}
 }
