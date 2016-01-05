@@ -37,5 +37,4 @@ $(function(){
 			navbar.setAttribute('aria-expanded', 'false');
 		}, false);
 	}
-	
 });

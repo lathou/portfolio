@@ -11,7 +11,6 @@
 
 	<body id="top-page" data-spy="scroll" data-target=".navbar">
 
-
 		<!--Header, Navbar-->
 		<header>
 			<nav class="navbar navbar-inverse navbar-fixed-top ">
@@ -62,8 +61,9 @@
 								<span class="col-xs-12">Développeuse Web</span>
 								<div class="clearfix"></div>
 								<h4 class="col-xs-12">COMPETENCES INFORMATIQUES</h4>
-									<span class="col-sm-4">Compétences principales :</span><p class="col-sm-8">Html5, CSS3, Javascript.</p>	</br>	     
-									<span class="col-sm-4">Autres :	</span><p class="col-sm-8"> Bootstrap, Git, PHP, MySQL, Java, Blender 3D, Photoshop.</p></br>
+									<span class="col-sm-4">Compétences principales :</span><p class="col-sm-8">Html5, CSS3, Javascript.</p>	</br>
+									<span class="col-sm-4">Outils :	</span><p class="col-sm-8"> Bootstrap, Git, jQuery.</p></br>  
+									<span class="col-sm-4">Autres :	</span><p class="col-sm-8"> PHP, MySQL, Java, Blender 3D, Photoshop.</p></br>
 
 								<h4 class="col-xs-12">FORMATIONS ET DIPLOMES</h4>                                                                                
 									<span class="col-sm-4">2015 :</span><p class="col-sm-8">Certificats Html5, CSS3, Javascript, PHP, MySQL - OPENCLASSROOMS.</p>
@@ -144,25 +144,25 @@
 
 			<div id="contact" class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-12">
 				<h1>CONTACT</h1>
-				<form method="post" action="php/contact.php">	
+				<form methode="post" action="">	
 					<div class="form-group col-md-5">
 						<label for="nom" class="col-xs-12 form-label text-left">Votre nom</label>
-						<input type="text" maxlength="40" name="nom" id="nom" class="form-control" required disabled/>
+						<input type="text" maxlength="40" name="nom" id="nom" class="form-control" required/>
 
 						<label for="prenom" class="col-xs-12 form-label text-left">Votre prénom</label>
-						<input type="text" maxlength="40" name="prenom" id="prenom" class="form-control" required disabled/>
+						<input type="text" maxlength="40" name="prenom" id="prenom" class="form-control" required/>
 
 						<label for="mail" class="col-xs-12 form-label text-left">Votre adresse e-mail</label>
-						<input type="text" maxlength="80" name="mail" id="mail" class="form-control" required disabled/>
+						<input type="text" maxlength="80" name="mail" id="mail" class="form-control" required/>
 						<br/>				
 					</div>
 
 					<div class="form-group col-md-7">
 						<label for="message" class="col-xs-12 form-label text-left">Votre message</label>
-						<textarea name="message" id="message" class="form-control" required disabled> Le formulaire de contact est momentanément indisponible! Veuillez m'en excuser.</textarea>
+						<textarea name="message" id="message" class="form-control" required></textarea>
 					</div>
 
-					<button type="submit" class="col-md-offset-5 col-md-2 btn btn-default" disabled>Envoyer</button>
+					<button id="sendMail" class="col-md-offset-5 col-md-2 btn btn-default">Envoyer</button>
 				</form>
 			</div>
 		</section>
@@ -213,6 +213,7 @@
 		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src = "js/ajax-mail.js"></script>
 		
 		<script>
     	// Scrollspy fluide
