@@ -36,11 +36,10 @@ envoyer.addEventListener('click', function(e){
 function verifier(){
 	verifierChamps(nom);
 	verifierChamps(prenom);
-	verifierChamps(mail);
 	verifierChamps(texte);
 	verifierMail(mail);
 
-	if(verifierChamps(nom) && verifierChamps(prenom) && verifierChamps(mail) && verifierChamps(texte) && verifierMail(mail)){
+	if(verifierChamps(nom) && verifierChamps(prenom) && verifierChamps(texte) && verifierMail(mail)){
 		return true;
 	}else{
 		return false;
@@ -73,8 +72,6 @@ function verifierMail(mail){
 			mail.className = 'form-control';
 			span.style.display = 'none';
 		});
-
-
 
 		return false;
 	}
