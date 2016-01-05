@@ -175,6 +175,19 @@ label{
 	margin-bottom: 0px;
 }
 
+.invalide, .invalide:focus{
+	border : 1px solid #D20000;
+	box-shadow: 0px 0px 5px rgba(210,0,0, 0.7);
+}
+
+span.erreur{
+	display : none;
+	color : #D20000;
+	font-size: 14px;
+	float: right;
+    margin-top: -10px;
+}
+
 /************* Footer *****************/
 footer{
 	background-color: #222;

@@ -1,12 +1,13 @@
 var envoyer = document.getElementById('sendMail');
-var form = document.querySelector('form');
-	var nom = document.getElementById('nom'),
-		prenom = document.getElementById('prenom'),
-		mail = document.getElementById('mail'),
-		texte = document.getElementById('message');
+var form = document.querySelector('form'),
+	nom = document.getElementById('nom'),
+	prenom = document.getElementById('prenom'),
+	mail = document.getElementById('mail'),
+	texte = document.getElementById('message');
 
-envoyer.addEventListener('click', function(){	
-	if(verifierMail(mail.value)){		
+envoyer.addEventListener('click', function(e){	
+	e.preventDefault();
+	if(verifier()){
 		message = nom.value + ' ' + prenom.value + ' :' + mail.value + '\n\n' + texte.value;
 
 		var xhr = new XMLHttpRequest();
@@ -29,16 +30,53 @@ envoyer.addEventListener('click', function(){
 				}
 			}
 		},false);
-	}else{
-
 	}
 }, false);
 
+function verifier(){
+	verifierChamps(nom);
+	verifierChamps(prenom);
+	verifierChamps(mail);
+	verifierChamps(texte);
+	verifierMail(mail);
+
+	if(verifierChamps(nom) && verifierChamps(prenom) && verifierChamps(mail) && verifierChamps(texte) && verifierMail(mail)){
+		return true;
+	}else{
+		return false;
+	}
+}
+
+function verifierChamps(champs){
+	if(champs.value.length){
+		return true;
+	}else{
+		champs.className = 'form-control invalide';
+		champs.addEventListener('keypress', function(){
+			champs.className = 'form-control';
+		});
+		return false;
+	}
+}
 
 function verifierMail(mail){
 	var myRegex = /^[a-zA-Z0-9._\-]+@[a-zA-A0-9]+\.[a-zA-Z]{2,4}$/;
-	if(myRegex.test(mail)){
+	if(myRegex.test(mail.value)){
 		return true;
+	}else{
+		var span = document.getElementById('erreur');
+
+		mail.className = 'form-control invalide';
+		span.style.display = 'block';
+
+		mail.addEventListener('keypress', function(){
+			mail.className = 'form-control';
+			span.style.display = 'none';
+		});
+
+
+
+		return false;
 	}
 }
 
