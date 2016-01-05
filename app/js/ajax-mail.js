@@ -24,11 +24,13 @@ envoyer.addEventListener('click', function(){
 	}));
 
 	xhr.addEventListener('readystatechange', function(){
-		if(xhr.readyState === 4 && xhr.status === 200){
-			alert('Votre message a bien été envoyé');
-			form.reset();	
-		}else{
-			alert('Une erreur est survenue, votre message n\'a pas pu être envoyé');
+		if(xhr.readyState === 4){
+			if(xhr.status === 200){
+				alert('Votre message a bien été envoyé');
+				form.reset();	
+			}else{
+				alert('Une erreur est survenue, votre message n\'a pas pu être envoyé');
+			}
 		}
 	},false);
 }, false);
