@@ -1,16 +1,13 @@
 var envoyer = document.getElementById('sendMail');
 var form = document.querySelector('form');
+	var nom = document.getElementById('nom'),
+		prenom = document.getElementById('prenom'),
+		mail = document.getElementById('mail'),
+		texte = document.getElementById('message');
 
-envoyer.addEventListener('click', function(){
-	e.preventDefault();
-	var nom = document.getElementById('nom').value,
-		prenom = document.getElementById('prenom').value,
-		mail = document.getElementById('mail').value,
-		message = document.getElementById('message').value;
-
-	if(nom && prenom && mail && message){
-
-		message = nom + ' ' + prenom + ' :' + mail + '\n\n' + message;
+envoyer.addEventListener('click', function(){	
+	if(verifierMail(mail.value)){		
+		message = nom.value + ' ' + prenom.value + ' :' + mail.value + '\n\n' + texte.value;
 
 		var xhr = new XMLHttpRequest();
 		xhr.open('POST', 'http://sophietk.herokuapp.com/mail', true);
@@ -32,8 +29,14 @@ envoyer.addEventListener('click', function(){
 				}
 			}
 		},false);
-	}else{
-		alert('Veuillez remplir les champs');
 	}
 }, false);
+
+
+function verifierMail(mail){
+	var myRegex = /^[a-zA-Z0-9._\-]+@[a-zA-A0-9]+\.[a-zA-Z]{2,4}$/;
+	if(preg_match(myRegex, mail)){
+		return true;
+	}
+}
 
