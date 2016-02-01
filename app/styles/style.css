@@ -115,11 +115,26 @@ h1{
 }
 
 .modal-body p{
-	padding: 0px;
+	padding-left: 0px;
+}
+
+span.glyphicon-asterisk{
+	color : #d2d2d2;
+	font-size: 12px;
+	font-weight: normal;
+	float:right;
+	padding-top: 3px;
+}
+span.glyphicon-asterisk.acquis{
+	color : #EC167A;
 }
 
 
-
+.comp{
+	padding-right: 25%;
+	margin-bottom: 0px;
+	font-weight: bold;
+}
 /**************** Portfolio ****************/
 
 #portfolio>h1{
