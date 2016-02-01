@@ -78,6 +78,10 @@ h1{
 }
 
 /**************** Qui-suis-je ****************/
+.article p{
+	padding-bottom: 20px;
+}
+
 #cv{
 	margin-top : 50px;
 }
@@ -203,6 +207,11 @@ footer h3{
 
 footer>div,footer ul, .certificats, .projets{
 	padding : 0px;
+	margin:0px;
+}
+
+.glyphicon-file{
+	margin-left: 5px;
 }
 
 
@@ -234,5 +243,9 @@ footer>div,footer ul, .certificats, .projets{
 
 	.modal-dialog{
 	width : 95%;
+	}
+
+	footer{
+		text-align: center;
 	}
 }
