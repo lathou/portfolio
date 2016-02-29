@@ -93,6 +93,7 @@ h1{
 	font-size: 16px;
 	padding : 20px 40px 40px 40px;
 }
+
 .modal-body h1{
 	color : #EC167A;
 	font-size : 45px;
@@ -260,7 +261,12 @@ footer>div,footer ul, .certificats, .projets{
 	width : 95%;
 	}
 
+	.modal-body{
+		padding : 15px;
+	}
+
 	footer{
 		text-align: center;
 	}
+
 }
