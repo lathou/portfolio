@@ -1,5 +1,4 @@
 function combat(joueur, ennemi){
-
 	var btnAttaqueJ = document.getElementById('btnAttaqueJ');
 	var btnDefenseJ = document.getElementById('btnDefenseJ');
 	var btnAttaqueB = document.getElementById('btnAttaqueB');

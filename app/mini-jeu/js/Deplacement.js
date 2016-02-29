@@ -77,6 +77,7 @@ function jouer(target){
 	if(joueur.xy === ennemi.xy+1 || joueur.xy === ennemi.xy-1 || joueur.xy === ennemi.xy+10 || joueur.xy === ennemi.xy-10 ){
 		supprimerCasesPossibles();
 		enCombat = true;
+		alert('Vous entrez en combat! Attaquez ou défendez-vous!');
 		combat(joueur, ennemi);
 	}
 }
