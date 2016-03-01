@@ -16,23 +16,27 @@
 		<!--Header, Navbar-->
 		<header>
 			<nav class="navbar navbar-inverse navbar-fixed-top ">
-				<div class="navbar-header col-lg-offset-2 col-md-offset-1 col-md-2 col-sm-3 col-xs-12">
-					<a class="navbar-brand" href="#top-page">Nathalie TK</a>
+				<div class="container">
+					<div class="row">
+						<div class="navbar-header col-sm-3 ">
+							<a class="navbar-brand" href="#top-page">Nathalie TK</a>
 
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
 
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav col-lg-6 col-md-8 col-sm-9">
-						<li class="col-md-offset-4 col-sm-offset-3 col-sm-2"><a href="#accueil">Accueil</a></li>
-						<li class="col-sm-2"><a href="#qui-suis-je">Qui suis-je?</a></li>
-						<li class="col-sm-2"><a href="#portfolio">Portfolio</a></li>
-						<li class="col-sm-2"><a href="#contact">Contact</a></li>
-					</ul>
+						<div class="collapse navbar-collapse">
+							<ul class="nav navbar-nav col-sm-9">
+								<li class="col-md-offset-4 col-sm-offset-3 col-sm-2"><a href="#accueil">Accueil</a></li>
+								<li class="col-sm-2"><a href="#qui-suis-je">Qui suis-je?</a></li>
+								<li class="col-sm-2"><a href="#portfolio">Portfolio</a></li>
+								<li class="col-sm-2"><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</nav>
 		</header>
@@ -45,14 +49,14 @@
 				<img alt="image" src="img/accueil.jpg"/>
 			</div>
 	
-			<div id="qui-suis-je" class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-12 text-justify">
+			<div id="qui-suis-je" class="container text-justify">
 				<h1 class="text-center">QUI SUIS-JE?</h1>
 				<div class="article">
 					<p>Ex-opticienne, il a toujours été dans ma personnalité de vouloir créer, construire des choses de mes propres mains. Souhaitant relever de nouveaux défis et ayant déjà quelques notions grâce à un frère et une soeur, tous deux développeurs, j'ai entrepris une reconversion dans un domaine qui m'intéresse et me correspond bien plus :  <strong>le développement web</strong>.</p>
 					<p>Plus précisément, je suis attirée par le métier d'<strong>intégratice / développeuse front-end</strong>. J'ai donc suivi une formation en autodidacte qui m'a permis d'acquérir des connaissances sur différents langages, tels que le HTML5, CSS3, JavaScript, et quelques notions de PHP, MySQL, Java. J'ai également pu découvrir les outils Bootstrap, Git, JQuery, NodeJS. </p>
 					<p>Persuadée qu'une évolution sera bien plus rapide avec de la pratique, je suis sans cesse à la recherche de nouveaux projets, pour ainsi pouvoir développer mes compétences et apprendre toujours plus !</p>
 				</div>
-				<div class="col-md-offset-5 col-md-2 text-center">
+				<div class="text-center">
 					<button type="button" data-toggle="modal" data-target="#modal" id="cv" class="btn btn-default btn-lg">Voir mon CV</button>
 				</div>
 
@@ -169,50 +173,54 @@
 
 
 
-			<div id="portfolio" class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-12">
+			<div id="portfolio" class="container">
 				<h1>PORTFOLIO</h1>
 				<p>Mes projets et réalisations :</p>
 				<div class="thumbnails">
-					<div class="col-xs-12 col-sm-6 thumbnail">						
-						<a href="http://www.merci-majolie.com" target="_blank" title="merci-majolie.com">
-							<img src="img/majolie-small.jpg" alt="site MaJolie">
-							<div class="caption">
-								<p>Merci-MaJolie</p>
-								<p class="info">Refonte des pages "panier" et "produit" : <strong>Html, CSS3, javascript</strong></p>
-							</div>
-						</a>
-					</div>					
-					<div class="col-xs-12 col-sm-6 thumbnail">
-						<a href="http://lathou.github.io/wrappez/app"  target="_blank" alt="Wrap it Baby!">						
-							<img src="img/wrap-small.jpg" alt="">
-							<div class="caption">
-								<p>1-2-3 Wrappez !</p>
-								<p class="info">Création d'un site vitrine : <strong>Html, CSS3 (bootstrap), javascript</strong></p>
-							</div>		
-						</a>				
-					</div>						
-					<div class="col-xs-12 col-sm-6 thumbnail">						
-						<a href="mini-jeu/mini-jeu.html" target="_blank" alt="Mini-jeu">
-							<img src="img/mini-jeu-small.jpg" alt="">
-							<div class="caption">
-								<p>Mini-jeu</p>
-								<p class="info">Projet Openclassrooms : <strong>javascript</strong></p>
-							</div>		
-						</a>				
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 thumbnail">						
+							<a href="http://www.merci-majolie.com" target="_blank" title="merci-majolie.com">
+								<img src="img/majolie-small.jpg" alt="site MaJolie">
+								<div class="caption">
+									<p>Merci-MaJolie</p>
+									<p class="info">Refonte des pages "panier" et "produit" : <strong>Html, CSS3, javascript</strong></p>
+								</div>
+							</a>
+						</div>					
+						<div class="col-xs-12 col-sm-6 thumbnail">
+							<a href="http://lathou.github.io/wrappez/app"  target="_blank" alt="Wrap it Baby!">						
+								<img src="img/wrap-small.jpg" alt="">
+								<div class="caption">
+									<p>1-2-3 Wrappez !</p>
+									<p class="info">Création d'un site vitrine : <strong>Html, CSS3 (bootstrap), javascript</strong></p>
+								</div>		
+							</a>				
+					</div>	
 					</div>
-					<div class="col-xs-12 col-sm-6 thumbnail">
-						<a href="https://github.com/lathou/me-mots"  target="_blank" alt="Mémots">					
-							<img src="img/memots-small.jpg" alt="site mé-mots">
-							<div class="caption">
-								<p>Mémots</p>
-								<p class="info">Création d'un site d'aide à l'apprentissage des langues <strong>(En cours) : <br/>Html, CSS3 (bootstrap), javascript (jquery), PHP, MySQL</strong></p>		
-							</div>	
-						</a>			
+					<div class="row">					
+						<div class="col-xs-12 col-sm-6 thumbnail">						
+							<a href="mini-jeu/mini-jeu.html" target="_blank" alt="Mini-jeu">
+								<img src="img/mini-jeu-small.jpg" alt="">
+								<div class="caption">
+									<p>Mini-jeu</p>
+									<p class="info">Projet Openclassrooms : <strong>javascript</strong></p>
+								</div>		
+							</a>				
+						</div>
+						<div class="col-xs-12 col-sm-6 thumbnail">
+							<a href="https://github.com/lathou/me-mots"  target="_blank" alt="Mémots">					
+								<img src="img/memots-small.jpg" alt="site mé-mots">
+								<div class="caption">
+									<p>Mémots</p>
+									<p class="info">Création d'un site d'aide à l'apprentissage des langues <strong>(En cours) : <br/>Html, CSS3 (bootstrap), javascript (jquery), PHP, MySQL</strong></p>		
+								</div>	
+							</a>			
+						</div>
 					</div>
 				</div>
 			</div>
 
-			<div id="contact" class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-12">
+			<div id="contact" class="container">
 				<h1>CONTACT</h1>
 				<form methode="post" action="">	
 					<div class="form-group col-md-5">
@@ -242,7 +250,7 @@
 
 		<!--Footer-->
 		<footer class="col-xs-12">
-			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-12">				
+			<div class="container">				
 				<div class="col-sm-7">
 					<h3>En savoir + sur mes certificats</h3>
 					<ul class="col-sm-6 certificats">

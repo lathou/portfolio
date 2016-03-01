@@ -22,6 +22,10 @@ a, a:hover, a:visited{
 	margin : 20px;
 }
 
+.container{
+	padding-right: 20px;
+	padding-left: 20px;
+}
 
 /********************* Navbar *******************/
 
@@ -158,6 +162,7 @@ span.glyphicon-asterisk.acquis{
 	padding-bottom: 20px;
 	padding-top: 20px;
 	opacity : 0.9;
+	transition : 0.2s;
 }
 
 .thumbnail:hover{
@@ -232,6 +237,12 @@ footer>div,footer ul, .certificats, .projets{
 
 
 /**************************RESPONSIVE*******************/
+
+@media (min-width: 992px){
+	.container {
+	    width: 900px;
+	}
+}
 
 /*tablettes*/
 @media screen and (max-width : 991px){
