@@ -161,8 +161,8 @@ span.glyphicon-asterisk.acquis{
 	margin-bottom: 0px;
 	padding-bottom: 20px;
 	padding-top: 20px;
-	opacity : 0.9;
-	transition : 0.2s;
+	opacity : 0.8;
+	transition : 0.3s;
 }
 
 .thumbnail:hover{
