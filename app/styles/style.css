@@ -231,6 +231,11 @@ footer>div,footer ul, .certificats, .projets{
 	margin:0px;
 }
 
+footer > .col-sm-3, footer>.col-sm-7, footer>.col-sm-2{
+	padding-left: 5px;
+	padding-right: 5px
+}
+
 .glyphicon-file{
 	margin-left: 5px;
 }
