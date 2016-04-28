@@ -1,7 +1,7 @@
 body{
 	background-color : #F7F7F7;
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size : 20px;
+	font-size : 18px;
 	text-align: center;
 }
 
@@ -121,6 +121,11 @@ h1{
 
 .modal-body p{
 	padding-left: 0px;
+	margin-bottom : 5px;
+}
+
+.modal-body ul{
+	list-style: disc;
 }
 
 span.glyphicon-asterisk{
@@ -149,10 +154,6 @@ span.glyphicon-asterisk.acquis{
 #portfolio a{
 	text-decoration: none;
 	color : #000;
-}
-
-.thumbnails{
-	padding-top: 30px;
 }
 
 .thumbnail{
