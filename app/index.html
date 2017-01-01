@@ -9,6 +9,7 @@
 		<link href='https://fonts.googleapis.com/css?family=Tulpen+One' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" href="styles/bootstrap.min.css"/>
 		<link rel="stylesheet" href="styles/style.css"/>
+		<link rel="stylesheet" href="styles/print.css" media="print"/>
 	</head>
 
 	<body id="top-page" data-spy="scroll" data-target=".navbar">
@@ -30,8 +31,7 @@
 
 						<div class="collapse navbar-collapse">
 							<ul class="nav navbar-nav col-sm-9">
-								<li class="col-md-offset-4 col-sm-offset-3 col-sm-2"><a href="#accueil">Accueil</a></li>
-								<li class="col-sm-2"><a href="#qui-suis-je">Qui suis-je?</a></li>
+								<li class="col-md-offset-6 col-sm-offset-5 col-sm-2"><a href="#cv">Mon CV</a></li>
 								<li class="col-sm-2"><a href="#portfolio">Portfolio</a></li>
 								<li class="col-sm-2"><a href="#contact">Contact</a></li>
 							</ul>
@@ -45,182 +45,336 @@
 
 		<!--Sections-->
 		<section>
-			<div id="accueil">
-				<img alt="image" src="img/accueil.jpg"/>
+			<div id="accueil" class="section">
+				<img alt="image" src="img/accueil2.jpg"/>
 			</div>
 	
-			<div id="qui-suis-je" class="container text-justify">
-				<h1 class="text-center">QUI SUIS-JE?</h1>
-				<div class="article">
-					<p>Ex-opticienne, il a toujours été dans ma personnalité de vouloir créer, construire des choses de mes propres mains. Souhaitant relever de nouveaux défis et ayant déjà quelques notions grâce à un frère et une soeur, tous deux développeurs, j'ai entrepris une reconversion dans un domaine qui m'intéresse et me correspond bien plus :  <strong>le développement web</strong>.</p>
-					<p>Plus précisément, je suis attirée par le métier d'<strong>intégratice / développeuse front-end</strong>. J'ai donc suivi une formation en autodidacte qui m'a permis d'acquérir des connaissances sur différents langages, tels que le HTML5, CSS3, JavaScript, et quelques notions de PHP, MySQL, Java. J'ai également pu découvrir les outils Bootstrap, Git, JQuery, NodeJS. </p>
-					<p>Persuadée qu'une évolution sera bien plus rapide avec de la pratique, je suis sans cesse à la recherche de nouveaux projets, pour ainsi pouvoir développer mes compétences et apprendre toujours plus !</p>
-				</div>
-				<div class="text-center">
-					<button type="button" data-toggle="modal" data-target="#modal" id="cv" class="btn btn-default btn-lg">Voir mon CV</button>
-				</div>
+			<div id="cv" class="container text-justify section">
+				<h1 class="col-xs-12">Mon CV</h1>
+				<h2 class="col-xs-12">Nathalie Trinh-Khanh</h2>
+				<p class="col-xs-12">Développeuse Front-end</p>
+				<p class="article col-xs-12">Anciennement opticienne, il a toujours été dans ma personnalité de vouloir créer, construire des choses de mes propres mains. Souhaitant relever de nouveaux défis, j'ai entrepris une reconversion pour un métier qui me correspond bien plus :  <strong>développeuse front-end</strong>.<br/>Dans ce but, je me suis formée, en autodidacte, sur différentes technologies et ai développé mes propres projets.<br/>Je suis actuellement en poste chez Wordappeal, où les multiples projets me permettent d'affiner mes connaissances.</p>
 
-				<div class="modal fade" id="modal">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-body">
-								<button class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>								
-								<h1 class="col-xs-12">Nathalie Trinh-Khanh</h1>
-								<span class="col-xs-12">Intégratrice / Développeuse Front</span>
-								<div class="clearfix"></div>
-								<h4 class="col-xs-12">COMPETENCES INFORMATIQUES</h4>
-									<p class="col-sm-6 comp">Html5
-										<span class="glyphicon glyphicon-asterisk "></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">CSS3
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">JavaScript
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">Bootstrap
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">jQuery
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">Git
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">PHP
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">MySQL
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">NodeJS
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">Java
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
-									<p class="col-sm-6 comp">Photoshop
-										<span class="glyphicon glyphicon-asterisk"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span>
-										<span class="glyphicon glyphicon-asterisk acquis"></span></p>
+					
+					<div class="clearfix"></div>
+					<h4 class="col-xs-12">COMPETENCES INFORMATIQUES</h4>
+					<div class="col-sm-6">
+						<p class="comp">Html5
+							<span class="glyphicon glyphicon-asterisk "></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>						
+						<p class="comp">CSS3
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>
+						<p class="comp">SASS
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>
+						<p class="comp">Bootstrap
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>		
+						<p class="comp">Photoshop
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>
+						<p class="comp">PHP
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span></p>
+						<p class="comp">MySQL
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span></p>													
+					</div>
+					<div class="col-sm-6">
+						<p class="comp">JavaScript
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>
 
-								<h4 class="col-xs-12">FORMATIONS ET DIPLOMES</h4>     
-									<span class="col-sm-4">2016 :</span><p class="col-sm-8">Certificats jQuery, NodeJS - OPENCLASSROOMS.</p>                                                                        
-									<span class="col-sm-4">2015 :</span><p class="col-sm-8">Certificats Html5, CSS3, JavaScript, PHP, MySQL - OPENCLASSROOMS.</p>
-									<span class="col-sm-4">2014 :</span><p class="col-sm-8">Certificat “Initiation à la programmation Java” - COURSERA.</p>
-									<span class="col-sm-4">2008 :</span><p class="col-sm-8">BTS opticien-lunetier - ICO, Bures-sur-Yvette. </p>	
-									<span class="col-sm-4">2006 :</span><p class="col-sm-8">Baccalauréat scientifique - LYCEE BLAISE PASCAL, Orsay.</p>
-								
-								<h4 class="col-xs-12">EXPERIENCES PROFESSIONNELLES</h4>
-									<span class="col-sm-4">Depuis Sept 2015 : </span><p class="col-sm-8">MERCI MA JOLIE.COM, Séoul, CORÉE DU SUD (puis France).<br/>
-												Front-End bénévole : Participation au développement du site sur Shopify,				
-												refonte des pages «Panier» et «Produit» en Html5, CSS3 et JavaScript.</p>
-									<span class="col-sm-4">Juil 2015 - Sept 2015 : </span><p class="col-sm-8">COTÉ JARDIN, Séoul, CORÉE DU SUD.<br/>
-												Serveuse</p>
-									<span class="col-sm-4">Dec 2012 - Fev 2015 : </span><p class="col-sm-8">OPTIQUE BEAUSEJOUR, Morsang-sur-Orge (91).<br/>
-									Gérante de magasin : Vente, gestion de stock, gestion administrative, montage, développement de la communication.</p>
-									<span class="col-sm-4">Fev 2009 - Nov 2012 : </span><p class="col-sm-8">LES OPTICIENS CONSEILS, Les Ulis (91).<br/>
-										Opticienne : Vente, montages, gestion du tiers-payant, examens de vue.</p>
-								
+						<p class="comp">jQuery
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>
 
-								<h4 class="col-xs-12">LANGUES</h4>
-								<p class="col-sm-12">Anglais : Intermédiaire<br/>
-									Espagnol : Débutant<br/>
-									Coréen : Débutant<br/></p>
+						<p class="comp">Angular JS
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>
+						<p class="comp">NodeJS
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>
+						<p class="comp">Git
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span>
+						</p>
+						<p class="comp">Java
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk"></span>
+							<span class="glyphicon glyphicon-asterisk acquis"></span></p>
+					</div>
 
-								<h4 class="col-xs-12">ACTIVITES ET CENTRES D'INTERETS</h4>
-								<p class="col-sm-12">	Peinture, Dessin, Couture, Golf, Course à pied.</p>								
-								</p>
+					<h4 class="col-xs-12">FORMATIONS ET DIPLOMES</h4>     
+						<span class="col-sm-3">2016 :</span><p class="col-sm-9">Certificats jQuery, NodeJS - OPENCLASSROOMS.</p>
+						<span class="col-sm-3">2015 :</span><p class="col-sm-9">Certificats Html5, CSS3, JavaScript, PHP, MySQL - OPENCLASSROOMS.</p>
+						<span class="col-sm-3">2014 :</span><p class="col-sm-9">Certificat “Initiation à la programmation Java” - COURSERA.</p>
+						<span class="col-sm-3">2008 :</span><p class="col-sm-9">BTS opticien-lunetier - ICO, Bures-sur-Yvette. </p>	
+						<span class="col-sm-3">2006 :</span><p class="col-sm-9">Baccalauréat scientifique - LYCEE BLAISE PASCAL, Orsay.</p>
+					
+					<h4 class="col-xs-12">EXPERIENCES PROFESSIONNELLES</h4>
+						<span class="col-sm-3">Depuis Juin 2016 : </span>
+						<div class="col-sm-9">
+							<p>WORDAPPEAL, Paris - <strong>Développeuse front-end</strong></p>
+							<ul>
+								<li>Intégration de sites, newsletters, infographies suivant maquettes PSD</li>
+								<li>Retouches Photoshop et Illustrator</li>
+								<li>Responsive web design et strategie mobile first</li>
+								<li>Gestion des évènements du DOM et animations en jQuery</li>
+								<li>Utilisation de gulp, isotope, slick-carrousel, font-awesome</li>
+								<li>Développement back en PHP pour sites Wordpress</li>
+							</ul>
+						</div>
+						<span class="col-sm-3">Sept 2015 - Fév 2016 : </span>
+						<div class="col-sm-9">
+							<p>MERCI-MAJOLIE.COM, Séoul, CORÉE DU SUD - <strong>Développeuse front-end (bénévole)</strong></p>
+							<ul>
+								<li>Utilisation du CMS e-commerce Shopify, de ses macros et de ses objets</li>
+								<li>Intégration, en responsive, suivant maquettes pour la refonte de pages</li>
+							</ul>
+						</div>
+						<span class="col-sm-3">Juil 2015 - Sept 2015 : </span><p class="col-sm-9">COTÉ JARDIN, Séoul, CORÉE DU SUD - <strong>Serveuse</strong></p>
+						<span class="col-sm-3">Dec 2012 - Fev 2015 : </span><p class="col-sm-9">OPTIQUE BEAUSEJOUR, Morsang-sur-Orge (91) - <strong>Gérante</strong></p>
+						<span class="col-sm-3">Fév 2009 - Nov 2012 : </span><p class="col-sm-9">LES OPTICIENS CONSEILS, Les Ulis (91) - <strong>Opticienne</strong></p>
+					
 
-								<div class="clearfix"></div>
+					<h4 class="col-xs-12">LANGUES</h4>
+					<p class="col-sm-12">Anglais : Intermédiaire<br/>
+						Espagnol : Débutant<br/>
+						Coréen : Débutant<br/></p>
+
+					<h4 class="col-xs-12">ACTIVITES ET CENTRES D'INTERETS</h4>
+					<p class="col-sm-12">	Peinture, Dessin, Couture, Golf.</p>								
+					</p>
+
+					<div class="clearfix"></div>
+					<button class="print btn btn-default">Imprimer mon CV</button>
+				
+			</div>
+
+
+
+			<div id="portfolio" class="section">
+				<div class="container">
+					<h1>PORTFOLIO</h1>
+					<p>Mes projets et réalisations :</p>
+					<div class="thumbnails">
+						<div class="row">
+							<div class="col-xs-6 col-sm-3 thumbnail" data-target="majolie">						
+								<img src="img/majolie-small.jpg" alt="site MaJolie">
+								<div class="caption">
+									<p>Merci-majolie<span> (2015)</span></p>
+								</div>
+							</div>					
+							<div class="col-xs-6 col-sm-3 thumbnail" data-target="wrappez">						
+								<img src="img/wrap-small.jpg" alt="">
+								<div class="caption">
+									<p>1-2-3 Wrappez !<span> (2015)</span></p>
+								</div>					
+							</div>	
+				
+							<div class="col-xs-6 col-sm-3 thumbnail" data-target="projet">						
+								<img src="img/mini-jeu-small.jpg" alt="">
+								<div class="caption">
+									<p>Mini-jeu<span> (2016)</span></p>
+								</div>		
+							</div>
+							<div class="col-xs-6 col-sm-3 thumbnail" data-target="memots">				
+								<img src="img/memots-small.jpg" alt="site mé-mots">
+								<div class="caption">
+									<p>Mémots<span> (2016)</span></p>
+								</div>			
+							</div>
+							<div class="col-xs-6 col-sm-3 thumbnail" data-target="clavier">				
+								<img src="img/clavier-small.jpg" alt="clavier coréen">
+								<div class="caption">
+									<p>Clavier coréen<span> (2016)</span></p>
+								</div>			
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-
-
-
-			<div id="portfolio" class="container">
-				<h1>PORTFOLIO</h1>
-				<p>Mes projets et réalisations :</p>
-				<div class="thumbnails">
-					<div class="row">
-						<div class="col-xs-12 col-sm-6 thumbnail">						
-							<a href="http://www.merci-majolie.com" target="_blank" title="merci-majolie.com">
-								<img src="img/majolie-small.jpg" alt="site MaJolie">
-								<div class="caption">
-									<p>Merci-MaJolie</p>
-									<p class="info">Refonte des pages "panier" et "produit" : <strong>Html, CSS3, javascript</strong></p>
-								</div>
-							</a>
-						</div>					
-						<div class="col-xs-12 col-sm-6 thumbnail">
-							<a href="http://lathou.github.io/wrappez/app"  target="_blank" alt="Wrap it Baby!">						
-								<img src="img/wrap-small.jpg" alt="">
-								<div class="caption">
-									<p>1-2-3 Wrappez !</p>
-									<p class="info">Création d'un site vitrine : <strong>Html, CSS3 (bootstrap), javascript</strong></p>
-								</div>		
-							</a>				
-					</div>	
+			<div class="detail-portfolio">
+				<div class=" row majolie">
+					<div class="col-md-6">
+						<h2>Merci-majolie.com</h2>
+						<p>Projet bénévole</p>
+						<p class="article">Refonte des pages "panier" et "produit" d'un site de vente de bijoux en ligne</p>
+						<ul>
+							<li>Utilisation du CMS e-commerce Shopify, de ses macros et de ses objets</li>
+							<li>Intégration, en responsive, suivant maquettes pour la refonte de pages</li>
+							<li>Technos utilisées : <strong>Html, CSS3, javascript, jQuery</strong></li>
+						</ul>
+						<a target="_blank" href="http://www.merci-majolie.com" class="btn btn-default">Accéder au site</a>
 					</div>
-					<div class="row">					
-						<div class="col-xs-12 col-sm-6 thumbnail">						
-							<a href="mini-jeu/mini-jeu.html" target="_blank" alt="Mini-jeu">
-								<img src="img/mini-jeu-small.jpg" alt="">
-								<div class="caption">
-									<p>Mini-jeu</p>
-									<p class="info">Projet Openclassrooms : <strong>javascript</strong></p>
-								</div>		
-							</a>				
+					<div class="col-md-6">
+						<img src="img/majolie-small.jpg">
+					</div>
+				</div>
+				<div class="row wrappez">
+					<div class="col-md-6">
+						<h2>1-2-3 Wrappez !</h2>
+						<p>Projet bénévole</p>
+						<p class="article">Création d'un site vitrine de produits de beauté</p>
+						<ul>
+							<li>Technos utilisées : <strong>Html, CSS3, bootstrap, jQuery</strong></li>
+						</ul>
+						<a target="_blank" href="http://lathou.github.io/wrappez/app" class="btn btn-default">Accéder au site</a>
+					</div>
+					<div class="col-md-6">
+						<img src="img/wrap-small.jpg">
+					</div>
+				</div>
+				<div class="row projet">
+					<div class="col-md-6">
+						<h2>Mini-jeu</h2>
+						<p>Projet Openclassrooms</p>
+						<p class="article">Création d'un mini-jeu de plateau dans le cadre de ma formation</p>
+						<ul>
+							<li>Programmation orientée objet</li>
+							<li>Technos utilisées : <strong>Html, CSS3, javascript natif</strong></li>
+						</ul>
+						<a target="_blank" href="mini-jeu/mini-jeu.html" class="btn btn-default">Tester le jeu</a>
+					</div>
+					<div class="col-md-6">
+						<img src="img/mini-jeu-small.jpg">
+					</div>
+				</div>
+				<div class="row memots">
+					<div class="col-md-6">
+						<h2>Mémots</h2>
+						<p>Projet personnel</p>
+						<p class="article">Création d'un site d'aide à l'apprentissage des langues<br/>
+						<span class="description">Ce site permet la création d'un profil, d'enregistrer des listes de mots à apprendre dans les langues désirées, de lancer des tests de révision et d'en obtenir les résultats</span></p>
+
+						<ul>
+							<li>Utilisation du sessionStorage pour la persistance des données de session</li>
+							<li>Utilisation de cookie pour la connexion à un compte</li>
+							<li>Manipulation du DOM avec jQuery</li>
+							<li>Utilisation de PHP et MySQL permettant d'enregistrer ou de modifier des listes de mots dans la base de données</li>
+							<li>Requêtes AJAX vers PHP pour éviter le rechargement de page</li>
+							<li>Programmation orientée objet</li>
+							<li>Responsive web design à l'aide de Bootstrap</li>
+							<li>Technos utilisées : <strong>Html, CSS3, bootstrap, jQuery, PHP, MySQL, LESS</strong></li>
+						</ul>
+						<a target="_blank" href="https://memots.herokuapp.com/" class="btn btn-default">Accéder au site</a>
+					</div>
+					<div class="col-md-6">
+						<div class="carousel slide col-md-12" id="carousel" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel" data-slide-to="0" class="active">
+								</li><li data-target="#carousel" data-slide-to="1">
+								</li><li data-target="#carousel" data-slide-to="2">
+							</li></ol>
+
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="img/memots-detail-1.jpg" alt="memots-detail 1">
+								</div>				
+								<div class="item">
+									<img src="img/memots-detail-2.jpg" alt="memots-details 2">	
+								</div>
+								<div class="item">
+									<img src="img/memots-detail-3.jpg" alt="memots-details 3">	
+								</div>
+								<div class="item">
+									<img src="img/memots-detail-4.jpg" alt="memots-details 4">	
+								</div>
+								<div class="item">
+									<img src="img/memots-detail-5.jpg" alt="memots-details 5">	
+								</div>
+							</div>
+
+							<a class="left carousel-control" data-slide="prev" href="#carousel"><span class="glyphicon glyphicon-chevron-left"></span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel"><span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
-						<div class="col-xs-12 col-sm-6 thumbnail">
-							<a href="https://github.com/lathou/me-mots"  target="_blank" alt="Mémots">					
-								<img src="img/memots-small.jpg" alt="site mé-mots">
-								<div class="caption">
-									<p>Mémots</p>
-									<p class="info">Création d'un site d'aide à l'apprentissage des langues <strong>(En cours) : <br/>Html, CSS3 (bootstrap), javascript (jquery), PHP, MySQL</strong></p>		
-								</div>	
-							</a>			
+					</div>
+				</div>
+				<div class="row clavier">
+					<div class="col-md-6">
+						<h2>Clavier coréen</h2>
+						<p>Projet personnel</p>
+						<p class="article">Création d'un clavier virtuel coréen<br/>
+						<ul>
+							<li>Récupération des signes coréen et de leurs données dans un fichier JSON afin de calculer la construction des syllabes</li>
+							<li>Possibilité de choisir la langue de clavier entre français et coréen grâce à ce même fichier JSON</li>
+							<li>Technos utilisées : <strong>Html, CSS3, AngularJS</strong></li>
+						</ul>
+						<a target="_blank" href="clavier/index.html" class="btn btn-default">Accéder au clavier</a>
+					</div>
+					<div class="col-md-6">
+						<div class="carousel slide col-md-12" id="carousel-clavier" data-ride="carousel">
+							<ol class="carousel-indicators">
+								<li data-target="#carousel-clavier" data-slide-to="0" class="active">
+								</li><li data-target="#carousel-clavier" data-slide-to="1">
+							</li></ol>
+
+							<div class="carousel-inner">
+								<div class="item active">
+									<img src="img/clavier-detail-1.jpg" alt="clavier-detail 1">
+								</div>				
+								<div class="item">
+									<img src="img/clavier-detail-2.jpg" alt="clavier-detail 2">	
+								</div>
+							</div>
+
+							<a class="left carousel-control" data-slide="prev" href="#carousel-clavier"><span class="glyphicon glyphicon-chevron-left"></span></a>
+							<a class="right carousel-control" data-slide="next" href="#carousel-clavier"><span class="glyphicon glyphicon-chevron-right"></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div id="contact" class="container">
+			<div id="contact" class="container section">
 				<h1>CONTACT</h1>
 				<form methode="post" action="">	
 					<div class="form-group col-md-5">
@@ -251,47 +405,43 @@
 		<!--Footer-->
 		<footer>
 			<div class="container">				
-				<div class="col-sm-7">
+				<div class="col-sm-5">
 					<h3>En savoir + sur mes certificats</h3>
-					<ul class="col-sm-6 certificats">
+					<ul class="certificats">
 						<li>
 							<a href="https://fr.coursera.org/course/initprogjava" title="Détails" target="_blank">Initiation à la programmation en Java</a>
 						</li>
 						<li>
-							<a href="https://openclassrooms.com/paths/lancer-son-propre-site-web" title="Détails" target="_blank">Parcours "Lancer son propre site web"</a>
-							<a href="https://openclassrooms.com/learning-path-certificates/3637907199" title="Voir le certificat" target="_blank">
+							<a href="https://openclassrooms.com/learning-path-certificates/3637907199" title="Voir le certificat" target="_blank">Parcours "Lancer son propre site web" 
 								<span class="glyphicon glyphicon-file"></span>
 							</a>
 						</li>
-						<li><a href="https://openclassrooms.com/paths/integrateur-web" title="Détails" target="_blank">Parcours "Intégrateur web"</a>    
-							<a href="https://openclassrooms.com/learning-path-certificates/1401072666" title="Voir le certificat" target="_blank">
+						<li>
+							<a href="https://openclassrooms.com/learning-path-certificates/1401072666" title="Voir le certificat" target="_blank">Parcours "Intégrateur web"     
 								<span class="glyphicon glyphicon-file"></span>
 							</a>
 						</li>
-						
-					</ul>
-					<ul class="col-sm-6 certificats">	
-						<li><a href="https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript" title="Détails" target="_blank">Apprenez à coder avec Javascript</a></li>	
-						<li><a href="https://openclassrooms.com/courses/simplifiez-vos-developpements-javascript-avec-jquery" title="Détails" target="_blank">Simplifiez vos développements avec jQuery</a></li>
-						<li><a href="https://openclassrooms.com/courses/des-applications-ultra-rapides-avec-node-js" title="Détails" target="_blank">Des applications ultre-rapides avec Node.Js</a></li>	
+						<li><a href="https://openclassrooms.com/learning-path-certificates/6097839784" title="voir le certificat" target="_blank">Disciple du javascript   
+								<span class="glyphicon glyphicon-file"></span>
+							</a>
+						</li>
 					</ul>
 				</div>
 
-				<div class="col-sm-3 projets">
+				<div class="col-sm-4 projets">
 					<h3>Projets et créations</h3>
 					<ul>
 						<li><a href="http://merci-majolie.com" target="_blank">Merci-Majolie</a></li>
 						<li><a href="http://lathou.github.io/wrappez/app" target="_blank">1-2-3 Wrappez !</a></li>						
 						<li><a href="mini-jeu/mini-jeu.html" target="_blank">Projet Openclassrooms</a></li>
-						<li><a href="http://lathou.github.io/me-mots/app/" target="_blank">Mé-mots</a></li>						
+						<li><a href="https://memots.herokuapp.com/" target="_blank">Mémots</a></li>						
 					</ul>
 				</div>
 
-				<div class="col-sm-2 footer-nav">
+				<div class="col-sm-3 footer-nav">
 					<h3>Navigation</h3>
 					<ul>
-						<li><a href="#accueil">Accueil</a></li>
-						<li><a href="#qui-suis-je">Qui suis-je?</a></li>
+						<li><a href="#cv">Mon CV</a></li>
 						<li><a href="#portfolio">Portfolio</a></li>
 						<li></li><a href="#contact">Contact</a></li>
 					</ul>
@@ -300,24 +450,9 @@
 			</div>
 		</footer>
 
-		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
 		<script src = "js/ajax-mail.js"></script>
-		
-		<script>
-    	// Scrollspy fluide
-	      $(function () {
-	        $('header a').on('click', function(e) {
-	          e.preventDefault();
-	          var hash = this.hash;
-	          $('html, body').animate({
-	            scrollTop: $(this.hash).offset().top
-	          }, 1000, function(){
-	            window.location.hash = hash;
-	          });
-	        });
-	      });
-	    </script>
 	</body>
 </html>

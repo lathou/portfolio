@@ -1,0 +1,31 @@
+.navbar, #portfolio, #contact,#accueil, footer, h1, #cv .btn.print, span.glyphicon-asterisk{
+	display:none !important;
+}
+span.glyphicon-asterisk.acquis{
+	display : inline !important;
+}
+#cv {
+	font-size : 16px;
+	padding :20px 0 0 0;
+}
+#cv h4{
+	margin-top:20px;
+}
+#cv .col-sm-6{
+	display : inline-block;
+	width : 50%;
+	vertical-align:top;
+	margin-right:-4px;
+}
+
+#cv .col-sm-3, #cv .col-sm-9{
+	display : inline-block;
+	vertical-align: top;
+	margin-right:-4px;
+}
+#cv .col-sm-3{
+	width : 30%;
+}
+#cv .col-sm-9{
+	width : 70%;
+}

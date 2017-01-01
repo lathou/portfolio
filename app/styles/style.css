@@ -1,7 +1,7 @@
 body{
-	background-color : #F7F7F7;
+	background-color : #f7f7f7;
 	font-family: 'Open Sans Condensed', sans-serif;
-	font-size : 20px;
+	font-size : 19px;
 	text-align: center;
 }
 
@@ -13,13 +13,16 @@ ul{
 	list-style-type: none;
 }
 
-a, a:hover, a:visited{
+a, a:hover, a:visited,a:focus{
 	text-decoration: none;
 	color : #9d9d9d;
+	outline:none;
 }
-
 .btn{
 	margin : 20px;
+}
+.btn:focus{
+	outline: none;
 }
 
 .container{
@@ -35,11 +38,11 @@ a, a:hover, a:visited{
 }
 
 .navbar-inverse .navbar-nav>li>a{	
-	height : 60px;
-	padding : 20px 0px 0px 0px;
+	height : 50px;
+	padding : 15px 0px 0px 0px;
 }
 
-.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover{
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus{
 	cursor : pointer;
 	background-color: #EC167A;	
 }
@@ -53,12 +56,12 @@ a, a:hover, a:visited{
 	font-size : 40px;
 	cursor : pointer;
 	font-family: 'Tulpen One', cursive;
-	padding : 20px 0px;
+	padding : 15px 0px;
 	text-align: left;
 }
 
 .navbar{
-	height : 60px;
+	height : 50px;
 	box-shadow: 0px 5px 20px rgba(0,0,0,0.3);
 }
 
@@ -66,14 +69,16 @@ a, a:hover, a:visited{
 /**************** Section ****************/
 
 #accueil{
-	padding-top:80px;
+	padding-top:70px;
 	margin-top: -20px;
+	margin-bottom:-40px;
 }
 
-#qui-suis-je, #portfolio , #contact{
-	border-bottom: 3px solid #ECECEC;
+#cv, #portfolio , #contact, .detail-portfolio{
 	padding : 80px 0px 100px;
-	margin-top : -40px;
+	transition-duration: 0.8s;
+	overflow: hidden;
+	margin-bottom: -40px;
 }
 
 h1{
@@ -81,69 +86,77 @@ h1{
 	margin-bottom: 40px;
 }
 
+.btn.btn-default{
+	background-color: #EC167A;
+	color:#fff;
+	border:1px solid #EC167A;
+	padding : 5px 20px;
+	font-size : 18px;
+	transition-duration: 0.4s
+}
+.btn.btn-default:hover{
+	background-color: #fff;
+	color:#EC167A;
+}
+
 /**************** Qui-suis-je ****************/
-.article p{
-	padding-bottom: 20px;
+#cv h1, #cv h1{
+	text-align: center;
+}
+#cv h2, h2{font-weight: 700; margin: 0; padding:0;}
+.article{
+	padding-top:30px;
+	padding-right:0;
+	padding-bottom : 10px;
 }
 
-#cv{
-	margin-top : 50px;
+#cv h4{
+	border-bottom : 1px solid #ec167A;
+	color : #000;
+	font-weight:700;
+	padding : 5px 0;
+	margin-top: 40px;
+	margin-bottom : 30px;
 }
 
-.modal-dialog{
-	width : 700px;
-}
-.modal-body{
-	font-size: 16px;
-	padding : 20px 40px 40px 40px;
-}
-
-.modal-body h1{
-	color : #EC167A;
-	font-size : 45px;
-	font-family: 'Tulpen One', cursive;
-	margin : 0px;
-	padding : 0px;
-	margin-bottom: -10px;
-}
-
-.modal-body span{
-	font-weight: bold;
-	padding : 0px;
-}
-
-.modal-body h4{
-	background-color: #CACACA;
-	color : #ffffff;
-	padding : 2px 7px;
-	margin-top: 20px;
-}
-
-.modal-body p{
+#cv p{
 	padding-left: 0px;
+	margin-bottom:0;
 }
+#cv ul{list-style: square; padding-left:25px; margin-bottom:10px; text-align: left;}
 
 span.glyphicon-asterisk{
 	color : #d2d2d2;
 	font-size: 12px;
 	font-weight: normal;
 	float:right;
-	padding-top: 3px;
+	padding-top: 7px;
+	display:inline-block;
 }
 span.glyphicon-asterisk.acquis{
 	color : #EC167A;
 }
 
-
 .comp{
-	padding-right: 25%;
+	padding-right: 30%;
 	margin-bottom: 0px;
 	font-weight: bold;
 }
+#cv div.col-sm-9{
+	padding-left:0;
+}
+#cv .print{
+	margin :  50px auto 0;
+	display: block;
+}
 /**************** Portfolio ****************/
-
-#portfolio>h1{
+#portfolio{
+	background : #EC167A;
+	color:#fff;
+}
+#portfolio h1{
 	margin-bottom: 0px;
+	color:#fff;
 }
 
 #portfolio a{
@@ -156,13 +169,15 @@ span.glyphicon-asterisk.acquis{
 }
 
 .thumbnail{
-	background-color: #F7F7F7;
+	background:none;
 	border : none;
 	margin-bottom: 0px;
 	padding-bottom: 20px;
 	padding-top: 20px;
-	opacity : 0.8;
+	opacity : 0.9;
 	transition : 0.3s;
+	color:#fff;
+	cursor:pointer;
 }
 
 .thumbnail:hover{
@@ -172,20 +187,69 @@ span.glyphicon-asterisk.acquis{
 .thumbnails img{
 	width : 95%;
 	border-radius: 4px;
-	box-shadow: 3px 3px 3px grey;
+	box-shadow: 3px 3px 10px rgba(0,0,0,0.4);
 }
 
 .thumbnail .caption{
 	padding : 0px;
 	padding-top: 5px;
+	color:#fff;
+}
+.thumbnail span{
+	font-style: italic;
+	font-size: 14px;
 }
 
-.info{
-	font-size: 14px;
-	font-style : italic;
-	margin-top : -10px;
-	margin-bottom: 0px
+.detail-portfolio{
+	background-color: #fff;
+	position: relative;
+	padding:0;
+	display: none;
+	box-sizing: border-box;
+	margin-top:40px;
 }
+
+.detail-portfolio::before{
+	content :" ";
+	display:block;
+	height:30px;
+	width : 30px;
+	transform: rotate(45deg) translateX(-50%);
+	position : absolute;
+	top:-8px;
+	left:50%;
+	background-color: #EC167A;
+}
+.carousel{
+	padding:0;
+	margin-top:10px;
+}
+.detail-portfolio .carousel-indicators{
+	bottom : -40px;
+}
+.carousel-indicators li{
+	border-color:#EC167A;
+}
+.carousel-indicators .active{
+	background-color: #EC167A;
+}
+.detail-portfolio .carousel .carousel-control{
+	background-image:none;
+	width:10%;
+}
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+	font-size : 20px; 
+	height:20px;
+	width:20x;
+}
+.description{
+	font-style:italic;
+	margin-bottom:20px;
+}
+.detail-portfolio .row{display:none; padding : 80px 0 100px;}
+.detail-portfolio .row .col-md-6{padding : 0 50px;}
+.detail-portfolio ul{list-style: square; padding-left:25px; margin-bottom:10px; text-align: left; margin-left:5%;}
+
 
 /***************** Contact *****************/
 #contact input[type='text']{

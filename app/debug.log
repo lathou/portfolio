@@ -1,0 +1,4 @@
+[1120/185128:ERROR:process_reader_win.cc(142)] SuspendThread: Accès refusé. (0x5)
+[1120/185128:ERROR:exception_snapshot_win.cc(87)] thread ID 7912 not found in process
+[1120/185128:WARNING:crash_report_exception_handler.cc(56)] ProcessSnapshotWin::Initialize failed
+[1120/185128:ERROR:scoped_process_suspend.cc(38)] NtResumeProcess: Tentative d’accès à un processus en cours d’arrêt.  (0xc000010a)
