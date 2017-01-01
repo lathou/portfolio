@@ -123,6 +123,10 @@ h1{
 	padding-left: 0px;
 	margin-bottom:0;
 }
+
+.modal-body ul{
+	list-style: disc;
+}
 #cv ul{list-style: square; padding-left:25px; margin-bottom:10px; text-align: left;}
 
 span.glyphicon-asterisk{
@@ -162,10 +166,6 @@ span.glyphicon-asterisk.acquis{
 #portfolio a{
 	text-decoration: none;
 	color : #000;
-}
-
-.thumbnails{
-	padding-top: 30px;
 }
 
 .thumbnail{
