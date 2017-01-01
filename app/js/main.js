@@ -19,16 +19,16 @@ $(function () {
 	$('header a').on('click', function(e) {
 		e.preventDefault();
 		var hash = $(this).attr('href');
-		if($(hash).prev('.section').length > 0){
-		  	var prevSectionBott = getBottom($(hash).prev('.section')) -45;
-		}else{
-		  	var prevSectionBott = 0;
-		}
 
-		$('html, body').animate({scrollTop: prevSectionBott}, 1000, function(){
+		$('html, body').animate({scrollTop: $(hash).offset().top}, 700, function(){
 		    window.location.hash = hash;
 		});	  	
 	});
+
+	$('.see').on('click', function(){
+		console.log($('#accueil').offset().top)
+		$('html, body').animate({scrollTop: $('#accueil').next('.section').offset().top},700);
+	})
 
 	//projects details
 	var openedDetails = false;
