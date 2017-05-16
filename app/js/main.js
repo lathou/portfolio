@@ -24,7 +24,9 @@ $(document).ready(function(){
 		setTimeout(function(){
 			$('.home h1').append('<span></span>');
 			$('body').removeClass('animate');
-			var s = skrollr.init();
+			if($(window).innerWidth > 768){
+				var s = skrollr.init();
+			}
 
 			for (var i = 0; i < title.length; i++) {
 				addLetter('.home h1 span',title[i], i*100);
@@ -32,7 +34,9 @@ $(document).ready(function(){
 		},(nameLength+6)*100)
 	}else{
 		$('body').removeClass('animate');
-		var s = skrollr.init();
+		if($(window).innerWidth > 768){
+			var s = skrollr.init();
+		}
 	}
 
 	function addLetter(where,letter, delay){

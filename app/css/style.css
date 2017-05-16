@@ -511,9 +511,20 @@ section.projects{
 	}
 
 	/*Home*/
+	.home{
+		height: 100vh;
+	}
+	.home .home-bkg{
+		opacity: 0.2;
+	}
 	.home .container{
 		min-width: 100px;
 		padding : 0 20px;
+		position: relative;
+		top:80px;
+		left:0;
+		transform:none;
+		color:#ffffff;
 	}
 	.home h1{
 		font-size: 52px;
