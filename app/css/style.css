@@ -92,7 +92,7 @@ h2{
 
 .home{
 	height:900px;
-	background-color: #3f2505;
+	background-color: #3e1e08;
 	color:#d2d2d2;
 	position: relative;
 	top:0;
@@ -221,7 +221,7 @@ h2{
 
 .timeline-line{
 	display: block;
-	background: #bc9d79;
+	background: #ae896e;
 	width : 5px;
 	position: absolute;
 	top:0;
@@ -276,7 +276,7 @@ h2{
 }
 
 .event.formation .jalon{right;background: #1ccdc0;}
-.event.experience .jalon{background: #bc9d79;}
+.event.experience .jalon{background: #ae896e;}
 
 .jalon::after{
 	content:'';
@@ -289,7 +289,7 @@ h2{
 }
 .event.experience .jalon::after{
 	left:-6.5px;
-	background: #bc9d79;
+	background: #ae896e;
 }
 .event.formation .jalon::after{
 	right : 1.5px;
@@ -312,7 +312,7 @@ h2{
 }
 .event.experience .jalon .picto{
 	left:-33px; 
-	border-color : #bc9d79;
+	border-color : #ae896e;
 	transform : translate(-50%, -50%);
 }
 
@@ -449,7 +449,7 @@ section.projects{
 	text-transform: uppercase;
 	text-align: center;	
 	width : 80%;
-	background: #bc9d79;
+	background: #ae896e;
 	color:#ffffff;
 	padding:10px;
 	border-radius: 0 25px 25px 0;
@@ -515,7 +515,7 @@ section.projects{
 		height: 100vh;
 	}
 	.home .home-bkg{
-		opacity: 0.2;
+		opacity: 0.1;
 	}
 	.home .container{
 		min-width: 100px;
@@ -559,9 +559,13 @@ section.projects{
 	}
 
 	/* Skills */
+	.skills ul.main-skills{
+		margin-top:0;
+	}
 	.skills ul.main-skills li{
 		margin-top : 40px;
 	}
+
 
 	/*Projets*/
 	.projects .thumbnail{
