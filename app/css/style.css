@@ -397,7 +397,7 @@ section.skills{
 /*========== PROJETS ===========*/
 
 section.projects{
-	background: #1fccc0;
+	background: #1cc8c3;
 	color : #ffffff;
 	text-align: left;
 }
@@ -549,7 +549,7 @@ section.projects{
 		font-size : 12px;
 	}
 	.jalon{
-		font-size : 10px;
+		font-size : 11px;
 	}
 	.event.experience .jalon .picto{
 		left:-25px;
@@ -564,6 +564,9 @@ section.projects{
 	}
 	.skills ul.main-skills li{
 		margin-top : 40px;
+	}
+	.skills ul.other-skills li{
+		margin : 5px;
 	}
 
 
