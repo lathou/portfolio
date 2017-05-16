@@ -1,3 +1,10 @@
+body{
+	height: 100vh;
+	margin : 0;
+	position: relative;
+	background: #637180;
+}
+
 input[type="text"]{
 	margin : 20px;
 	width : 550px;

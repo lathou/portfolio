@@ -10,11 +10,15 @@ table{
 	text-align : center;
 	border-collapse: collapse;
 	margin-top : 15px;
+	width : 50%;
+	height: 100%;
+	width: 46vw;
+	height : 46vw;
 }
 
 td{
-	width : 59px;
-	height : 59px;
+	width : 10%;
+	height : 10%;
 	border : 1px solid #D0D0D0;
 	background-size: 100%;
 	background-repeat: no-repeat;

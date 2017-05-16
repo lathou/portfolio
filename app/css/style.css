@@ -1,0 +1,568 @@
+body{
+	margin : 0;
+	background: #fbf7f0;
+	font-family: 'Abel', sans-serif;
+	color : #676767;
+	font-size: 16px;
+}
+body.animate{
+	overflow: hidden;
+}
+body::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: #c1c1c1;
+  outline: 1px solid slategrey;
+}
+*{
+	box-sizing: border-box;
+}
+ul{padding-left:15px; margin : 0;}
+a{
+	color:#676767;
+	text-decoration: none;
+}
+
+h2, h3, nav, .other-skills, .jalon{
+	font-family: 'Fjalla One', sans-serif;
+	font-weight: normal;
+}
+
+.container{
+	width: 100%;
+	max-width: 1280px;
+	padding : 20px 40px;
+	margin : 0 auto;
+}
+
+body.animate nav.container,
+body.animate .mouse{
+	opacity: 0;
+}
+
+nav.container{
+	opacity: 1;
+	position: fixed;
+	z-index:10;
+	right:0px;
+	top:0px;
+	text-align: right;
+	padding : 20px;
+	transition : 0.7s;
+}
+
+nav ul{
+	list-style: none;
+	margin:0;
+	padding:0;
+}
+nav ul li{
+	color:#fff;
+	display: inline-block;
+	vertical-align: top;
+}
+nav ul li a{
+	color:#fff;
+	padding : 0 5px;
+	font-size:12px;
+	text-transform: uppercase;
+}
+
+nav img{
+	margin-top : -2px;
+}
+
+section{
+	overflow: hidden;
+	position: relative;
+}
+
+h2{
+	margin-top:0;
+	padding : 10px;
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	text-transform: uppercase;
+}
+
+/*========== HOME ===========*/
+
+.home{
+	height:900px;
+	background-color: #3f2505;
+	color:#d2d2d2;
+	position: relative;
+	top:0;
+	left:0;
+	min-width: 100%;
+}
+
+.home .home-bkg{
+	display: block;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	opacity: 1;
+	background: url('../img/home1.jpeg') no-repeat center;
+	background-size: cover;
+}
+.home .container{
+	min-width: 1000px;
+	transform : scale(0.5) translate(-135%,0%) rotate(-22deg) rotateX(50deg);
+	text-align:center;
+	top : -6%;
+	left:50%;
+	color:#dddddd; 
+	position: absolute;
+}
+.home h1{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 90px;
+}
+
+.home h1 span{
+	display: block;
+	font-size: 22px;
+	line-height: 0;
+	font-family: 'Fjalla One', sans-serif;
+}
+.home p{
+	font-size: 22px;
+	width: 100%;
+	max-width: 700px;
+	margin : 40px auto;
+	font-style: italic;
+}
+.home p span{
+	font-size: 80px;
+	line-height: 0;
+}
+
+.home .mouse{
+	height : 40px;
+	width: 25px;
+	border : 2px solid #ffffff;
+	border-radius: 20px;
+	position : absolute;
+	bottom: 0;
+	left: 50%;
+	transform : translateX(-50%);
+	margin-bottom : 30px;
+	transition : 0.3s;
+}
+.home .mouse.fixed{
+	position: fixed;
+}
+.home .mouse-wheel{
+	height : 4px;
+	width: 4px;
+	background : #ffffff;
+	border-radius: 50%;
+	position : absolute;
+	left: 50%;
+	margin-left:-2px;
+  -webkit-animation: mouse-scroll 2s infinite; /* Safari 4+ */
+  -moz-animation:    mouse-scroll 2s infinite; /* Fx 5+ */
+  -o-animation:      mouse-scroll 2s infinite; /* Opera 12+ */
+  animation:         mouse-scroll 2s infinite; /* IE 10+, Fx 29+ */
+}
+@-webkit-keyframes mouse-scroll {
+  0%   { top: 5px; }
+  100% { top: 20px; opacity: 0 }
+}
+@-moz-keyframes mouse-scroll {
+  0%   { top: 5px; }
+  100% { top: 20px; opacity: 0 }
+}
+@-o-keyframes mouse-scroll {
+  0%   { top: 5px; }
+  100% { top: 20px; opacity: 0 }
+}
+@keyframes mouse-scroll {
+  0%   { top: 5px; }
+  100% { top: 20px; opacity: 0 }
+}
+.home .mouse span{
+	display: block;
+	background: #ffffff;
+	width : 4px;
+	position: absolute;
+	bottom:-32px;
+	height : 20px;
+	left:50%;
+	margin-left:-2px;	
+}
+
+/*========== PARCOURS ===========*/
+
+.parcours{
+	background: #fbf7f0;
+}
+.parcours h2{
+	background:#fbf7f0;
+}
+
+.timeline{
+	width: 100%;
+	max-width : 800px;
+	margin : 0 auto;
+	padding-bottom : 50px;
+}
+.timeline:after{
+	content: '';
+	display: block;
+	clear:both;
+}
+
+.timeline-line{
+	display: block;
+	background: #bc9d79;
+	width : 5px;
+	position: absolute;
+	top:0;
+	bottom :0;
+	left:50%;
+	margin-left:-2.5px;
+}
+
+.event{
+	clear: both;
+	display: inline-block;
+	width : calc(50% - 43px);
+	margin : 0 20px;
+	padding : 0 10px;
+}
+.event.formation .text{
+	text-align: right;
+}
+.event.secondaire{
+	opacity: 0.2;
+}
+.event.experience{
+	float: right;
+}
+.event.formation{
+	float: left;
+}
+.event.formation + .event.experience,
+.event.experience + .event.formation{
+	margin-top: -50px;
+	margin-bottom: 10px;
+}
+
+.event .text{
+	padding : 0 15px 25px;
+	border-radius: 20px;
+}
+.event .text h3{
+	margin : 0;
+	font-size: 16px;
+	display: inline;
+}
+.jalon{
+	color: #fff;
+	position: relative;
+	font-size:12px;
+	text-transform: uppercase;
+	padding :7px;
+	text-align: center;
+	border-radius: 20px;
+	margin-bottom:10px;
+}
+
+.event.formation .jalon{right;background: #1ccdc0;}
+.event.experience .jalon{background: #bc9d79;}
+
+.jalon::after{
+	content:'';
+	display: block;
+	width : 11px;
+	height: 11px;
+	position: absolute;
+	top:46%;
+	transform: rotate(45deg) translateY(-50%);
+}
+.event.experience .jalon::after{
+	left:-6.5px;
+	background: #bc9d79;
+}
+.event.formation .jalon::after{
+	right : 1.5px;
+	background: #1ccdc0;
+}
+.jalon .picto{
+	display: block;
+	width : 35px;
+	height: 35px;
+	border : 2px solid;
+	border-radius: 50%;
+	position: absolute;
+	background: #fbf7f0;
+	top:50%;
+}
+.event.formation .jalon .picto{
+	right:-33px; 
+	border-color : #1ccdc0;
+	transform : translate(50%, -50%);
+}
+.event.experience .jalon .picto{
+	left:-33px; 
+	border-color : #bc9d79;
+	transform : translate(-50%, -50%);
+}
+
+/*========== SKILLS ===========*/
+
+section.skills{
+	background: #c1f3f8;
+	color : #1ccdc0;
+	text-align: center;
+	padding-bottom : 40px;
+}
+.skills::before{
+	content:'';
+	display: block;
+	background: #1ccdc0;
+	width : 5px;
+	position: absolute;
+	top:0;
+	left:50%;
+	margin-left:-2.5px;
+	height : 20px;
+}
+.skills>ul{
+	list-style: none;
+}
+.skills ul.main-skills{
+	margin : 80px auto ;
+	padding:0;
+}
+.skills ul.main-skills li{
+	display: inline-block;
+	vertical-align: top;
+	width: 150px;
+	height:150px;
+	margin : 20px;
+	border : 15px solid #ffffff;
+	border-radius: 50%;
+	position: relative;
+}
+.skills ul.main-skills li svg{
+	position: absolute;
+	left:-15px;
+	top:-15px;
+	transform: rotate(-90deg);
+}
+.skills ul.main-skills li #bar{
+	stroke: #1ccdc0;
+	stroke-width : 15px;
+	transition: 1.5s ease-out;
+	stroke-dashoffset:424.11;
+}
+.skills ul.main-skills li span{
+	position: absolute;
+	bottom: -50px;
+	left:0;
+	display: block;
+	width: 100%;
+	font-size : 18px;
+}
+.skills ul.main-skills li img{
+	position: absolute;
+	max-width: 80%;
+	top:50%;
+	left:50%;
+	transform : translate(-50%, -50%);
+}
+
+.skills ul.other-skills{
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.skills ul.other-skills li{
+	display: inline-block;
+	vertical-align: top;
+	padding : 7px;
+	margin : 10px;
+	background: #fff;
+	border-radius: 5px;
+}
+
+/*========== PROJETS ===========*/
+
+section.projects{
+	background: #1fccc0;
+	color : #ffffff;
+	text-align: left;
+}
+.projects .container::before{
+	content:'';
+	display: block;
+	background: #ffffff;
+	width : 5px;
+	position: absolute;
+	top:0px;
+	left:50%;
+	margin-left:-2.5px;
+	height : 20px;
+}
+.projects .main-projects{
+	margin : 80px auto ;
+	border-radius: 30px;
+	overflow: hidden;
+}
+.projects .thumbnail{
+	display: inline-block;
+	width: 50%;
+	margin-right: -4px;
+	position: relative;
+	background: #362209;
+	vertical-align: top;
+}
+.projects .thumbnail img{
+	width: 100%;
+	display: block;
+	opacity: 0.9;
+	transition: 0.3s;
+}
+.projects .thumbnail:hover img{
+	opacity: 0.1;
+}
+.projects .thumbnail .caption{
+	width: 100%;
+	display: block;
+	position: absolute;
+	top:50%;
+	color: #ffffff;
+	transform : translateY(-50%);
+	padding : 20px;
+}
+.projects .thumbnail .title{
+	font-family: 'Fjalla One', sans-serif;
+	font-size : 12px;
+	text-transform: uppercase;
+	text-align: center;	
+	width : 80%;
+	background: #bc9d79;
+	color:#ffffff;
+	padding:10px;
+	border-radius: 0 25px 25px 0;
+	position: absolute;
+	bottom : 20px;
+	left:0;
+}
+.projects .thumbnail .title span{
+	font-size : 14px;
+	text-transform: none;
+	font-family: 'Abel', sans-serif;
+}
+.projects .thumbnail:hover .title{
+	display: none;
+}
+.projects .thumbnail .caption p, 
+.projects .thumbnail .caption li{
+	font-size: 15px;
+	margin : 0;
+	text-align: left;
+}
+.projects .thumbnail .caption{
+	display: none;
+}
+.projects .thumbnail:hover .caption{
+	display: block;
+}
+
+/********************************************/
+/*             RESPONSIVE                   */
+/********************************************/
+
+@media screen and (max-width : 768px){	
+	html{
+		overflow: visible !important;
+	}
+
+	body{
+		font-size : 12px;	    
+		float: left;
+	    width: 100%;
+	    height: 100%;
+	    overflow:visible !important;
+	}
+	section .container{
+		padding : 20px 0;
+	}
+	h2{
+		font-size : 20px;
+	}
+	nav ul li a{
+		font-size : 10px;
+	}
+	nav ul li a img{
+		width: 20px;
+	}
+	nav.container{
+		padding : 12px;
+	}
+
+	/*Home*/
+	.home .container{
+		min-width: 100px;
+		padding : 0 20px;
+	}
+	.home h1{
+		font-size: 52px;
+	}
+	.home h1 span, 
+	.home p{
+		font-size: 16px;
+	}
+
+	/*Parcours*/
+	.event{
+		padding-right : 0;
+		padding-left : 0;
+		margin : 0 8px;
+		width : 40%;
+		width : calc(50% - 33px)
+	}
+	.event .text{
+		padding : 0 0 25px 0;
+	}
+	.event .text h3{
+		font-size : 12px;
+	}
+	.jalon{
+		font-size : 10px;
+	}
+	.event.experience .jalon .picto{
+		left:-25px;
+	}
+	.event.formation .jalon .picto{
+		right: -25px;
+	}
+
+	/* Skills */
+	.skills ul.main-skills li{
+		margin-top : 40px;
+	}
+
+	/*Projets*/
+	.projects .thumbnail{
+		width: 90%;
+		display: block;
+		margin : 0 auto;
+	}
+	.projects .thumbnail .caption p, .projects .thumbnail .caption li{
+		font-size : 12px;
+	}
+
+}
+
+
+

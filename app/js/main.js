@@ -1,52 +1,77 @@
-var previousBott = getBottom($('#accueil'))
+$(document).ready(function(){
 
-/*$(window).on('scroll load', function(){
-	$('.section').each(function(){
-		if(previousBott - 300 <= $(window).scrollTop()){
-			$(this).css({transform : 'scale(1)'});
-			previousBott = getBottom($(this));
+	// Start animation
+	if($(window).scrollTop() < 100){
+		var name = 'Nathalie Trin';
+		var title = 'Développeuse Front-End';
+		var nameLength = name.length;
+		$('.home h1').text('')
+
+		for (var i = 0; i < nameLength; i++) {
+			addLetter('.home h1',name[i], i*100);
 		}
-	})
-})*/
 
-function getBottom(that){
-	return that.offset().top + that.innerHeight();
-}
+		setTimeout(function(){
+			for (var i = 1; i <= 3; i++) {
+				removeLetter(nameLength - i, i*100)
+			}
+		},nameLength*100)
 
-$(function () {
-	var c=document.querySelector('.navbar-collapse');var d=c.querySelectorAll('li');for(var i=0;i<d.length;i++){d[i].addEventListener('click',function(){c.className='navbar-collapse collapse';c.setAttribute('aria-expanded','false')},false)}
-	// Scrollspy fluide
-	$('header a').on('click', function(e) {
-		e.preventDefault();
-		var hash = $(this).attr('href');
+		setTimeout(function(){
+			addLetter('.home h1','K', 200);
+		}, (nameLength+3)*100)
 
-		$('html, body').animate({scrollTop: $(hash).offset().top}, 700, function(){
-		    window.location.hash = hash;
-		});	  	
-	});
+		setTimeout(function(){
+			$('.home h1').append('<span></span>');
+			$('body').removeClass('animate');
+			var s = skrollr.init();
 
-	$('.see').on('click', function(){
-		console.log($('#accueil').offset().top)
-		$('html, body').animate({scrollTop: $('#accueil').next('.section').offset().top},700);
-	})
+			for (var i = 0; i < title.length; i++) {
+				addLetter('.home h1 span',title[i], i*100);
+			}
+		},(nameLength+6)*100)
+	}else{
+		$('body').removeClass('animate');
+		var s = skrollr.init();
+	}
 
-	//projects details
-	var openedDetails = false;
-	$('.thumbnail').on('click', function(){
-		var project = '.' + $(this).attr('data-target');
-		$('.detail-portfolio').find('.row').hide();
-		$('.detail-portfolio').find(project).fadeIn()
+	function addLetter(where,letter, delay){
+		setTimeout(function(){
+			$(where).text($(where).text() + letter)
+		}, delay)
+	}
 
-		if(!openedDetails){
-			$('.detail-portfolio').slideDown();
-			$('#portfolio').animate({paddingBottom:'0'})
+	function removeLetter(id, delay){
+		setTimeout(function(){
+			var text = $('.home h1').text()
+			$('.home h1').text(text.substring(0, id))
+		}, delay)
+	}
+
+	//Anchors
+	$('nav a').on('click', function(e){
+		if($(this).find('img').length == 0){
+			e.preventDefault();
 		}
+		$('html, body').animate({scrollTop : $($(this).attr('href')).offset().top},1000)
 	})
+});	
 
-	//Print
-	$('.print').on('click', function(e){
-		e.preventDefault();
-		window.print();
-	})
+//Percent
+$(window).on('scroll load', function(){
+	var percent = [0.8, 0.6, 0.5, 0.8];
+	if($(window).scrollTop() >= $('.skills').offset().top -100){
+		$('.skills li svg #bar').each(function(id, item){
+			$(item).css('stroke-dashoffset', (424.11 * (1-percent[id])) + 'px')
+		})
+	}
+})
 
-});
+//Mouse
+$(window).on('load scroll', function(){
+	if($(window).scrollTop() + $(window).innerHeight() > $('.home').innerHeight()){
+		$('.home .mouse').removeClass('fixed');
+	}else{
+		$('.home .mouse').addClass('fixed')
+	}
+})
