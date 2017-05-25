@@ -347,7 +347,7 @@ section.skills{
 	vertical-align: top;
 	width: 150px;
 	height:150px;
-	margin : 20px;
+	margin : 20px 15px;
 	border : 15px solid #ffffff;
 	border-radius: 50%;
 	position: relative;
@@ -362,7 +362,6 @@ section.skills{
 	stroke: #6ad8e5;
 	stroke-width : 15px;
 	transition: 1.5s ease-out;
-	stroke-dashoffset:424.11;
 }
 .skills ul.main-skills li span{
 	position: absolute;
@@ -561,12 +560,27 @@ section.projects{
 	/* Skills */
 	.skills ul.main-skills{
 		margin-top:0;
+		margin-bottom : 20px;
 	}
 	.skills ul.main-skills li{
-		margin-top : 40px;
+		margin-bottom : 40px;
+		width : 115px;
+		height : 115px;
+		border:10px solid #ffffff;
+	}
+	.skills ul.main-skills li span{
+		bottom:-40px;
 	}
 	.skills ul.other-skills li{
 		margin : 5px;
+	}
+	.skills ul.main-skills li svg{
+		height: 132%;
+		width: 132%;
+		padding : 4px;
+	}
+	.skills ul.main-skills li #bar{
+		stroke-width : 10px;
 	}
 
 

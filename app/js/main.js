@@ -66,7 +66,7 @@ $(window).on('scroll load', function(){
 	var percent = [0.8, 0.6, 0.5, 0.8];
 	if($(window).scrollTop() >= $('.skills').offset().top -100){
 		$('.skills li svg #bar').each(function(id, item){
-			$(item).css('stroke-dashoffset', (424.11 * (1-percent[id])) + 'px')
+			$(item).css('stroke-dashoffset', (283 * (1-percent[id])) + '%')
 		})
 	}
 })
