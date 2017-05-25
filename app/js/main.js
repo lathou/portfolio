@@ -24,7 +24,7 @@ $(document).ready(function(){
 		setTimeout(function(){
 			$('.home h1').append('<span></span>');
 			$('body').removeClass('animate');
-			if($(window).innerWidth > 768){
+			if($(window).innerWidth() > 768){
 				var s = skrollr.init();
 			}
 
@@ -34,7 +34,7 @@ $(document).ready(function(){
 		},(nameLength+6)*100)
 	}else{
 		$('body').removeClass('animate');
-		if($(window).innerWidth > 768){
+		if($(window).innerWidth() > 768){
 			var s = skrollr.init();
 		}
 	}
