@@ -275,7 +275,7 @@ h2{
 	margin-bottom:10px;
 }
 
-.event.formation .jalon{right;background: #37ccd4;}
+.event.formation .jalon{right;background: #59d2d8;}
 .event.experience .jalon{background: #ae896e;}
 
 .jalon::after{
@@ -293,7 +293,7 @@ h2{
 }
 .event.formation .jalon::after{
 	right : 1.5px;
-	background: #37ccd4;
+	background: #59d2d8;
 }
 .jalon .picto{
 	display: block;
@@ -307,7 +307,7 @@ h2{
 }
 .event.formation .jalon .picto{
 	right:-33px; 
-	border-color : #37ccd4;
+	border-color : #59d2d8;
 	transform : translate(50%, -50%);
 }
 .event.experience .jalon .picto{
@@ -320,14 +320,14 @@ h2{
 
 section.skills{
 	background: #c1f3f8;
-	color : #37ccd4;
+	color : #59d2d8;
 	text-align: center;
 	padding-bottom : 40px;
 }
 .skills::before{
 	content:'';
 	display: block;
-	background: #37ccd4;
+	background: #59d2d8;
 	width : 5px;
 	position: absolute;
 	top:0;
@@ -359,7 +359,7 @@ section.skills{
 	transform: rotate(-90deg);
 }
 .skills ul.main-skills li #bar{
-	stroke: #37ccd4;
+	stroke: #59d2d8;
 	stroke-width : 15px;
 	transition: 1.5s ease-out;
 	stroke-dashoffset:424.11;
@@ -397,7 +397,7 @@ section.skills{
 /*========== PROJETS ===========*/
 
 section.projects{
-	background: #37ccd4;
+	background: #59d2d8;
 	color : #ffffff;
 	text-align: left;
 }
