@@ -412,7 +412,6 @@ section.projects{
 }
 .projects .main-projects{
 	margin : 80px auto ;
-	border-radius: 30px;
 	overflow: hidden;
 }
 .projects .thumbnail{
@@ -420,7 +419,7 @@ section.projects{
 	width: 50%;
 	margin-right: -4px;
 	position: relative;
-	background: #362209;
+	background: #000000;
 	vertical-align: top;
 }
 .projects .thumbnail img{
