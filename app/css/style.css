@@ -91,7 +91,7 @@ h2{
 /*========== HOME ===========*/
 
 .home{
-	height:900px;
+	height:700px;
 	background-color: #3e1e08;
 	color:#d2d2d2;
 	position: relative;
@@ -107,17 +107,16 @@ h2{
 	position: absolute;
 	top:0;
 	left:0;
-	opacity: 1;
+	opacity: 0.5;
 	background: url('../img/home1.jpeg') no-repeat center;
 	background-size: cover;
 }
 .home .container{
-	min-width: 1000px;
-	transform : scale(0.5) translate(-135%,0%) rotate(-22deg) rotateX(50deg);
 	text-align:center;
-	top : -6%;
+	top : 40%;
 	left:50%;
-	color:#dddddd; 
+	transform: translate(-50%, -50%);
+	color:#ffffff; 
 	position: absolute;
 }
 .home h1{
@@ -241,7 +240,7 @@ h2{
 	text-align: right;
 }
 .event.secondaire{
-	opacity: 0.2;
+	opacity: 1;
 }
 .event.experience{
 	float: right;
@@ -520,7 +519,7 @@ section.projects{
 		min-width: 100px;
 		padding : 0 20px;
 		position: relative;
-		top:80px;
+		top:80px !important;
 		left:0;
 		transform:none;
 		color:#ffffff;
@@ -575,9 +574,10 @@ section.projects{
 		margin : 5px;
 	}
 	.skills ul.main-skills li svg{
-		height: 132%;
-		width: 132%;
-		padding : 4px;
+		height: 122%;
+		width: 122%;
+		left:-10.5px;
+		top: -10.5px;
 	}
 	.skills ul.main-skills li #bar{
 		stroke-width : 10px;
