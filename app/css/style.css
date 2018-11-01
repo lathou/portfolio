@@ -91,7 +91,8 @@ h2{
 /*========== HOME ===========*/
 
 .home{
-	height:700px;
+	min-height:700px;
+	height: 100vh;
 	background-color: #3e1e08;
 	color:#d2d2d2;
 	position: relative;
@@ -108,7 +109,7 @@ h2{
 	top:0;
 	left:0;
 	opacity: 0.5;
-	background: url('../img/home1.jpeg') no-repeat center;
+	background: url('../img/home1-min.jpg') no-repeat center;
 	background-size: cover;
 }
 .home .container{
@@ -344,20 +345,19 @@ section.skills{
 .skills ul.main-skills li{
 	display: inline-block;
 	vertical-align: top;
-	width: 150px;
-	height:150px;
-	margin : 20px 15px;
-	border : 15px solid #ffffff;
-	border-radius: 50%;
+	margin : 20px 15px 50px;
 	position: relative;
 }
 .skills ul.main-skills li svg{
-	position: absolute;
-	left:-15px;
-	top:-15px;
 	transform: rotate(-90deg);
+	width: 180px;
+	height:180px;
 }
-.skills ul.main-skills li #bar{
+.skills ul.main-skills li .bar-background{
+	stroke: #ffffff;
+	stroke-width : 15px;
+}
+.skills ul.main-skills li .bar{
 	stroke: #6ad8e5;
 	stroke-width : 15px;
 	transition: 1.5s ease-out;
@@ -372,7 +372,7 @@ section.skills{
 }
 .skills ul.main-skills li img{
 	position: absolute;
-	max-width: 80%;
+	max-width: 70%;
 	top:50%;
 	left:50%;
 	transform : translate(-50%, -50%);
@@ -561,10 +561,7 @@ section.projects{
 		margin-bottom : 20px;
 	}
 	.skills ul.main-skills li{
-		margin-bottom : 40px;
-		width : 115px;
-		height : 115px;
-		border:10px solid #ffffff;
+		margin-bottom : 40px;		
 	}
 	.skills ul.main-skills li span{
 		bottom:-40px;
@@ -573,15 +570,13 @@ section.projects{
 		margin : 5px;
 	}
 	.skills ul.main-skills li svg{
-		height: 122%;
-		width: 122%;
-		left:-10.5px;
-		top: -10.5px;
+		width: 120px;
+		height : 120px;
 	}
-	.skills ul.main-skills li #bar{
+	.skills ul.main-skills li .bar,
+	.skills ul.main-skills li .bar-background{
 		stroke-width : 10px;
 	}
-
 
 	/*Projets*/
 	.projects .thumbnail{
