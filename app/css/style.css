@@ -91,7 +91,6 @@ h2{
 /*========== HOME ===========*/
 
 .home{
-	min-height:700px;
 	height: 100vh;
 	background-color: #3e1e08;
 	color:#d2d2d2;
@@ -396,8 +395,10 @@ section.skills{
 
 section.projects{
 	background: #6ad8e5;
-	color : #ffffff;
 	text-align: left;
+}
+.projects h2 {
+	color: #ffffff;
 }
 .projects .container::before{
 	content:'';
@@ -414,10 +415,17 @@ section.projects{
 	margin : 80px auto ;
 	overflow: hidden;
 }
-.projects .thumbnail{
+
+.projects .card {
+	background: #ffffff;
+	border-radius: 5px;
+	overflow: hidden;
 	display: inline-block;
-	width: 50%;
-	margin-right: -4px;
+	width: 45%;
+	width: calc(50% - 34px);
+	margin : 15px;
+}
+.projects .thumbnail{
 	position: relative;
 	background: #000000;
 	vertical-align: top;
@@ -440,28 +448,19 @@ section.projects{
 	transform : translateY(-50%);
 	padding : 20px;
 }
-.projects .thumbnail .title{
+.projects .title{
 	font-family: 'Fjalla One', sans-serif;
-	font-size : 12px;
 	text-transform: uppercase;
 	text-align: center;	
-	width : 80%;
-	background: #ae896e;
-	color:#ffffff;
-	padding:10px;
-	border-radius: 0 25px 25px 0;
-	position: absolute;
-	bottom : 20px;
-	left:0;
+	padding:15px;
+	margin: 0;
 }
-.projects .thumbnail .title span{
+.projects .title span{
 	font-size : 14px;
 	text-transform: none;
 	font-family: 'Abel', sans-serif;
 }
-.projects .thumbnail:hover .title{
-	display: none;
-}
+
 .projects .thumbnail .caption p, 
 .projects .thumbnail .caption li{
 	font-size: 15px;
@@ -524,7 +523,7 @@ section.projects{
 		color:#ffffff;
 	}
 	.home h1{
-		font-size: 52px;
+		font-size: 45px;
 	}
 	.home h1 span, 
 	.home p{
@@ -579,10 +578,13 @@ section.projects{
 	}
 
 	/*Projets*/
-	.projects .thumbnail{
+	.projects .card{
 		width: 90%;
+		margin: 15px auto;
 		display: block;
-		margin : 0 auto;
+	}
+	.projects .main-projects{
+		margin: 0 auto;
 	}
 	.projects .thumbnail .caption p, .projects .thumbnail .caption li{
 		font-size : 12px;
