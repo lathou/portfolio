@@ -220,7 +220,7 @@ h2{
 
 .timeline-line{
 	display: block;
-	background: #f6c758;
+	background: #f6cc68;
 	width : 5px;
 	position: absolute;
 	top:0;
@@ -274,8 +274,8 @@ h2{
 	margin-bottom:10px;
 }
 
-.event.formation .jalon{background: #de626b;}
-.event.experience .jalon{background: #f6c758;}
+.event.formation .jalon{background: #be5c64;}
+.event.experience .jalon{background: #f6cc68;}
 
 .jalon::after{
 	content:'';
@@ -288,11 +288,11 @@ h2{
 }
 .event.experience .jalon::after{
 	left:-6.5px;
-	background: #f6c758;
+	background: #f6cc68;
 }
 .event.formation .jalon::after{
 	right : 1.5px;
-	background: #de626b;
+	background: #be5c64;
 }
 .jalon .picto{
 	display: block;
@@ -306,12 +306,12 @@ h2{
 }
 .event.formation .jalon .picto{
 	right:-33px; 
-	border-color : #de626b;
+	border-color : #be5c64;
 	transform : translate(50%, -50%);
 }
 .event.experience .jalon .picto{
 	left:-33px; 
-	border-color : #f6c758;
+	border-color : #f6cc68;
 	transform : translate(-50%, -50%);
 }
 
@@ -319,7 +319,7 @@ h2{
 
 section.skills{
 	background: #ffe6ab;
-	color : #f6c758;
+	color : #f6cc68;
 	text-align: center;
 	padding-bottom : 40px;
 }
@@ -360,7 +360,7 @@ section.skills{
 	stroke-width : 15px;
 }
 .skills ul.main-skills li .bar{
-	stroke: #f6c758;
+	stroke: #f6cc68;
 	stroke-width : 15px;
 	transition: 1.5s ease-out;
 }
@@ -398,7 +398,7 @@ section.skills{
 /*========== PROJETS ===========*/
 
 section.projects{
-	background: #de626b;
+	background: #be5c64;
 	text-align: left;
 }
 .projects h2 {
