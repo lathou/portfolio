@@ -92,7 +92,7 @@ h2{
 
 .home{
 	height: 100vh;
-	background-color: #330003;
+	background-color: #2f0512;
 	color:#d2d2d2;
 	position: relative;
 	top:0;
@@ -200,7 +200,8 @@ h2{
 /*========== PARCOURS ===========*/
 
 .parcours,
-.parcours h2{
+.parcours h2,
+.jalon .picto{
 	background: #fff9f1;
 }
 
@@ -299,7 +300,6 @@ h2{
 	border : 2px solid;
 	border-radius: 50%;
 	position: absolute;
-	background: #fffae0;
 	top:50%;
 }
 .event.formation .jalon .picto{
@@ -429,7 +429,7 @@ section.projects{
 }
 .projects .thumbnail{
 	position: relative;
-	background: #330003;
+	background: #2f0512;
 	vertical-align: top;
 }
 .projects .thumbnail img{
