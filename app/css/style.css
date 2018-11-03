@@ -199,11 +199,9 @@ h2{
 
 /*========== PARCOURS ===========*/
 
-.parcours{
-	background: #fffae0;
-}
+.parcours,
 .parcours h2{
-	background:#fffae0;
+	background: #fff9f1;
 }
 
 .timeline{
@@ -274,7 +272,7 @@ h2{
 	margin-bottom:10px;
 }
 
-.event.formation .jalon{background: #be5c64;}
+.event.formation .jalon{background: #cb6081;}
 .event.experience .jalon{background: #f6cc68;}
 
 .jalon::after{
@@ -292,7 +290,7 @@ h2{
 }
 .event.formation .jalon::after{
 	right : 1.5px;
-	background: #be5c64;
+	background: #cb6081;
 }
 .jalon .picto{
 	display: block;
@@ -306,7 +304,7 @@ h2{
 }
 .event.formation .jalon .picto{
 	right:-33px; 
-	border-color : #be5c64;
+	border-color : #cb6081;
 	transform : translate(50%, -50%);
 }
 .event.experience .jalon .picto{
@@ -318,7 +316,7 @@ h2{
 /*========== SKILLS ===========*/
 
 section.skills{
-	background: #ffe6ab;
+	background: #ffeab9;
 	color : #f6cc68;
 	text-align: center;
 	padding-bottom : 40px;
@@ -398,7 +396,7 @@ section.skills{
 /*========== PROJETS ===========*/
 
 section.projects{
-	background: #be5c64;
+	background: #cb6081;
 	text-align: left;
 }
 .projects h2 {
