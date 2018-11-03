@@ -92,7 +92,7 @@ h2{
 
 .home{
 	height: 100vh;
-	background-color: #3e1e08;
+	background-color: #330003;
 	color:#d2d2d2;
 	position: relative;
 	top:0;
@@ -200,10 +200,10 @@ h2{
 /*========== PARCOURS ===========*/
 
 .parcours{
-	background: #fbf7f0;
+	background: #fffae0;
 }
 .parcours h2{
-	background:#fbf7f0;
+	background:#fffae0;
 }
 
 .timeline{
@@ -220,7 +220,7 @@ h2{
 
 .timeline-line{
 	display: block;
-	background: #ae896e;
+	background: #f6c758;
 	width : 5px;
 	position: absolute;
 	top:0;
@@ -274,8 +274,8 @@ h2{
 	margin-bottom:10px;
 }
 
-.event.formation .jalon{right;background: #6ad8e5;}
-.event.experience .jalon{background: #ae896e;}
+.event.formation .jalon{background: #de626b;}
+.event.experience .jalon{background: #f6c758;}
 
 .jalon::after{
 	content:'';
@@ -288,11 +288,11 @@ h2{
 }
 .event.experience .jalon::after{
 	left:-6.5px;
-	background: #ae896e;
+	background: #f6c758;
 }
 .event.formation .jalon::after{
 	right : 1.5px;
-	background: #6ad8e5;
+	background: #de626b;
 }
 .jalon .picto{
 	display: block;
@@ -301,32 +301,35 @@ h2{
 	border : 2px solid;
 	border-radius: 50%;
 	position: absolute;
-	background: #fbf7f0;
+	background: #fffae0;
 	top:50%;
 }
 .event.formation .jalon .picto{
 	right:-33px; 
-	border-color : #6ad8e5;
+	border-color : #de626b;
 	transform : translate(50%, -50%);
 }
 .event.experience .jalon .picto{
 	left:-33px; 
-	border-color : #ae896e;
+	border-color : #f6c758;
 	transform : translate(-50%, -50%);
 }
 
 /*========== SKILLS ===========*/
 
 section.skills{
-	background: #c8f3f7;
-	color : #6ad8e5;
+	background: #ffe6ab;
+	color : #f6c758;
 	text-align: center;
 	padding-bottom : 40px;
+}
+.skills h2 {
+	color: #ffffff;
 }
 .skills::before{
 	content:'';
 	display: block;
-	background: #6ad8e5;
+	background: #ffffff;
 	width : 5px;
 	position: absolute;
 	top:0;
@@ -357,17 +360,18 @@ section.skills{
 	stroke-width : 15px;
 }
 .skills ul.main-skills li .bar{
-	stroke: #6ad8e5;
+	stroke: #f6c758;
 	stroke-width : 15px;
 	transition: 1.5s ease-out;
 }
 .skills ul.main-skills li span{
 	position: absolute;
-	bottom: -50px;
+	bottom: -40px;
 	left:0;
 	display: block;
 	width: 100%;
 	font-size : 18px;
+	font-weight: bold;
 }
 .skills ul.main-skills li img{
 	position: absolute;
@@ -394,7 +398,7 @@ section.skills{
 /*========== PROJETS ===========*/
 
 section.projects{
-	background: #6ad8e5;
+	background: #de626b;
 	text-align: left;
 }
 .projects h2 {
@@ -427,7 +431,7 @@ section.projects{
 }
 .projects .thumbnail{
 	position: relative;
-	background: #000000;
+	background: #330003;
 	vertical-align: top;
 }
 .projects .thumbnail img{
@@ -561,6 +565,9 @@ section.projects{
 	}
 	.skills ul.main-skills li{
 		margin-bottom : 40px;		
+	}
+	.skills ul.main-skills li img{
+		max-width: 45%;	
 	}
 	.skills ul.main-skills li span{
 		bottom:-40px;
