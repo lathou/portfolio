@@ -127,6 +127,7 @@ h1{
 	background: #ffffff;
 	padding: 20px 40px;
 	width: 60%;
+	max-width: 700px;
 	margin: 0 auto;
 	outline: 20px solid #ffffff;
 	border: 5px solid #4d4d4d;
@@ -516,32 +517,28 @@ section.projects{
 	nav.container{
 		padding : 12px;
 	}
+	h1{
+		font-size: 45px;
+	}
 
 	/*Home*/
 	.home{
 		height: 100vh;
 	}
-	.home .home-bkg{
+	.home__bkg{
 		opacity: 0.1;
 	}
-	.home .container{
+	.home__box{
 		min-width: 100px;
+		width: 80%;
 		padding : 0 20px;
-		position: relative;
-		top:80px !important;
-		left:0;
-		transform:none;
-		color:#ffffff;
 	}
-	.home h1{
-		font-size: 45px;
-	}
-	.home h1 span, 
-	.home p{
+	.home__subtitle, 
+	.home__quote{
 		font-size: 16px;
 	}
 
-	/*Parcours*/
+	/*Experiences*/
 	.experience{
 		padding-right : 0;
 		padding-left : 0;
