@@ -2,7 +2,7 @@ body{
 	margin : 0;
 	background: #fbf7f0;
 	font-family: 'Abel', sans-serif;
-	color : #676767;
+	color : #4d4d4d;
 	font-size: 16px;
 }
 body.animate{
@@ -21,7 +21,7 @@ body::-webkit-scrollbar-thumb {
 }
 ul{padding-left:15px; margin : 0;}
 a{
-	color:#676767;
+	color:#4d4d4d;
 	text-decoration: none;
 }
 
@@ -88,61 +88,71 @@ h2{
 	text-transform: uppercase;
 }
 
+h1{
+	margin-top: 0;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 80px;
+}
+
 /*========== HOME ===========*/
 
 .home{
 	height: 100vh;
 	background-color: #2f0512;
-	color:#d2d2d2;
 	position: relative;
 	top:0;
 	left:0;
 	min-width: 100%;
+	color: #4d4d4d;
 }
 
-.home .home-bkg{
+.home__bkg{
 	display: block;
 	height: 100%;
 	width: 100%;
 	position: absolute;
 	top:0;
 	left:0;
-	opacity: 0.5;
+	opacity: 0.8;
 	background: url('../img/home1-min.jpg') no-repeat center;
 	background-size: cover;
 }
-.home .container{
+
+.home__box {
 	text-align:center;
-	top : 40%;
+	top : 50%;
 	left:50%;
 	transform: translate(-50%, -50%);
-	color:#ffffff; 
 	position: absolute;
-}
-.home h1{
-	font-family: 'Kaushan Script', cursive;
-	font-size: 90px;
+	background: #ffffff;
+	padding: 20px 40px;
+	width: 60%;
+	margin: 0 auto;
+	outline: 20px solid #ffffff;
+	border: 5px solid #4d4d4d;
 }
 
-.home h1 span{
+.home__subtitle{
 	display: block;
 	font-size: 22px;
 	line-height: 0;
 	font-family: 'Fjalla One', sans-serif;
+	text-transform: uppercase;
+	font-weight: normal;
 }
-.home p{
-	font-size: 22px;
+.home__quote{
+	font-size: 20px;
 	width: 100%;
 	max-width: 700px;
 	margin : 40px auto;
 	font-style: italic;
 }
-.home p span{
+.home__quote-icon{
 	font-size: 80px;
 	line-height: 0;
 }
 
-.home .mouse{
+.mouse{
 	height : 40px;
 	width: 25px;
 	border : 2px solid #ffffff;
@@ -154,10 +164,10 @@ h2{
 	margin-bottom : 30px;
 	transition : 0.3s;
 }
-.home .mouse.fixed{
+.mouse.fixed{
 	position: fixed;
 }
-.home .mouse-wheel{
+.mouse-wheel{
 	height : 4px;
 	width: 4px;
 	background : #ffffff;
@@ -186,7 +196,7 @@ h2{
   0%   { top: 5px; }
   100% { top: 20px; opacity: 0 }
 }
-.home .mouse span{
+.mouse span{
 	display: block;
 	background: #ffffff;
 	width : 4px;
@@ -197,11 +207,11 @@ h2{
 	margin-left:-2px;	
 }
 
-/*========== PARCOURS ===========*/
+/*========== Experiences ===========*/
 
-.parcours,
-.parcours h2,
-.jalon .picto{
+.experiences,
+.experiences h2,
+.experience__icon .picto{
 	background: #fff9f1;
 }
 
@@ -228,55 +238,54 @@ h2{
 	margin-left:-2.5px;
 }
 
-.event{
+.experience{
 	clear: both;
 	display: inline-block;
 	width : calc(50% - 43px);
 	margin : 0 20px;
 	padding : 0 10px;
 }
-.event.formation .text{
+.experience__description{
 	text-align: right;
 }
-.event.secondaire{
-	opacity: 1;
+.experience_secondary{
+	opacity: 0.8;
 }
-.event.experience{
+.experience_work{
 	float: right;
 }
-.event.formation{
+.experience_training{
 	float: left;
 }
-.event.formation + .event.experience,
-.event.experience + .event.formation{
+.experience_training + .experience_work,
+.experience_work + .experience_training{
 	margin-top: -50px;
 	margin-bottom: 10px;
 }
 
-.event .text{
+.experience__description{
 	padding : 0 15px 25px;
 	border-radius: 20px;
 }
-.event .text h3{
+.experience__description h3{
 	margin : 0;
 	font-size: 16px;
 	display: inline;
 }
-.jalon{
+.experience__icon{
 	color: #fff;
 	position: relative;
 	font-size:12px;
 	text-transform: uppercase;
 	padding :7px;
 	text-align: center;
-	border-radius: 20px;
 	margin-bottom:10px;
 }
 
-.event.formation .jalon{background: #b65674;}
-.event.experience .jalon{background: #f6cc68;}
+.experience_training .experience__icon{background: #b65674; border-radius: 0 20px 20px 0;}
+.experience_work .experience__icon{background: #f6cc68; border-radius: 20px 0 0 20px;}
 
-.jalon::after{
+.experience__icon::after{
 	content:'';
 	display: block;
 	width : 11px;
@@ -285,15 +294,15 @@ h2{
 	top:46%;
 	transform: rotate(45deg) translateY(-50%);
 }
-.event.experience .jalon::after{
+.experience_work .experience__icon::after{
 	left:-6.5px;
 	background: #f6cc68;
 }
-.event.formation .jalon::after{
+.experience_training .experience__icon::after{
 	right : 1.5px;
 	background: #b65674;
 }
-.jalon .picto{
+.experience__icon .picto{
 	display: block;
 	width : 35px;
 	height: 35px;
@@ -302,12 +311,12 @@ h2{
 	position: absolute;
 	top:50%;
 }
-.event.formation .jalon .picto{
+.experience_training .experience__icon .picto{
 	right:-33px; 
 	border-color : #b65674;
 	transform : translate(50%, -50%);
 }
-.event.experience .jalon .picto{
+.experience_work .experience__icon .picto{
 	left:-33px; 
 	border-color : #f6cc68;
 	transform : translate(-50%, -50%);
@@ -533,26 +542,26 @@ section.projects{
 	}
 
 	/*Parcours*/
-	.event{
+	.experience{
 		padding-right : 0;
 		padding-left : 0;
 		margin : 0 8px;
 		width : 40%;
 		width : calc(50% - 33px)
 	}
-	.event .text{
+	.experience__description{
 		padding : 0 0 25px 0;
 	}
-	.event .text h3{
+	.experience__description h3{
 		font-size : 12px;
 	}
-	.jalon{
+	.experience__icon{
 		font-size : 11px;
 	}
-	.event.experience .jalon .picto{
+	.experience_work .experience__icon .picto{
 		left:-25px;
 	}
-	.event.formation .jalon .picto{
+	.experience_training .experience__icon .picto{
 		right: -25px;
 	}
 

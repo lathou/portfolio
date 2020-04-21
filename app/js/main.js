@@ -22,14 +22,14 @@ $(document).ready(function(){
 		}, (nameLength+3)*100)
 
 		setTimeout(function(){
-			$('.home h1').append('<span></span>');
+			$('.home h1').append('<span class="home__subtitle"></span>');
 			$('body').removeClass('animate');
 			if($(window).innerWidth() > 768){
 				var s = skrollr.init();
 			}
 
 			for (var i = 0; i < title.length; i++) {
-				addLetter('.home h1 span',title[i], i*100);
+				addLetter('.home__subtitle',title[i], i*100);
 			}
 		},(nameLength+6)*100)
 	}else{
