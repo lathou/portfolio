@@ -464,6 +464,16 @@ section.skills{
 	stroke-width : 15px;
 	transition: 1.5s ease-out;
 }
+.skills ul.main-skills li .bar_80 {
+	stroke-dashoffset: 56.60%;
+}
+.skills ul.main-skills li .bar_90 {
+	stroke-dashoffset: 28.3%;
+}
+.skills ul.main-skills li .bar_50 {
+	stroke-dashoffset: 141.50%;
+}
+
 .skills ul.main-skills li span{
 	position: absolute;
 	bottom: -40px;
