@@ -1,235 +1,378 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 	<head>
-		<title>PORTFOLIO | Nathalie TK</title>
-		<meta charset="UTF-8"/>
+		<title>Portfolio</title>
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width"/>
-		<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
-		<link href='https://fonts.googleapis.com/css?family=Tulpen+One' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="styles/bootstrap.min.css"/>
-		<link rel="stylesheet" href="styles/style.css"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,300;0,500&display=block" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+
 	</head>
-
-	<body id="top-page" data-spy="scroll" data-target=".navbar">
-
-		<!--Header, Navbar-->
-		<header>
-			<nav class="navbar navbar-inverse navbar-fixed-top ">
-				<div class="navbar-header col-lg-offset-2 col-md-offset-1 col-md-2 col-sm-3 col-xs-12">
-					<a class="navbar-brand" href="#top-page">Nathalie TK</a>
-
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
-
-				<div class="collapse navbar-collapse">
-					<ul class="nav navbar-nav col-lg-6 col-md-8 col-sm-9">
-						<li class="col-md-offset-4 col-sm-offset-3 col-sm-2"><a href="#accueil">Accueil</a></li>
-						<li class="col-sm-2"><a href="#qui-suis-je">Qui suis-je?</a></li>
-						<li class="col-sm-2"><a href="#portfolio">Portfolio</a></li>
-						<li class="col-sm-2"><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-			</nav>
-		</header>
-
-<div class="clearfix"></div>
-
-		<!--Sections-->
-		<section>
-			<div id="accueil">
-				<img alt="image" src="img/accueil.jpg"/>
-			</div>
 	
-			<div id="qui-suis-je" class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-12 text-justify">
-				<h1 class="text-center">QUI SUIS-JE?</h1>
-				<p>Ex-opticienne, il a toujours été dans ma personnalité de vouloir créer, construire des choses de mes propres mains. Ne trouvant plus satisfaction dans mon ancien métier, j'ai entrepris une reconversion dans un domaine qui me correspond bien plus : <strong>le développement web</strong>.</p>
-				<p>Plus précisément, je suis attirée par le métier de développeuse <strong>front-end</strong>. J'ai donc suivi une formation en autodidacte qui m'a permis d'acquerir des connaissances sur différents languages, tels que HTML5, CSS3 et JavaScript, mais également quelques notions de PHP, MySQL, Java.</p>
-				<p>Persuadée qu'une évolution sera bien plus rapide avec de la pratique, je suis sans cesse à la recherche de nouveaux projets, pour ainsi pouvoir développer mes compétences et apprendre toujours plus !</p>
-				<div class="col-md-offset-5 col-md-2 text-center">
-					<button type="button" data-toggle="modal" data-target="#modal" id="cv" class="btn btn-default btn-lg">Voir mon CV</button>
-				</div>
+	<body class="animate">
+		<nav class="menu">
+			<ul class="container">
+				<li><a href="#skills">Compétences</a> • </li>
+				<li><a href="#offers">Services</a> • </li>
+				<li><a href="#portfolio">Portfolio</a> • </li>
+				<li><a href="#contact">Contact</a> • </li>
+				<!-- <li><a href="#experiences">Mon parcours</a> • </li> -->
+				<li><a target="_blank" href="https://www.linkedin.com/in/nathalie-trinh-khanh-64162210a/"><img src="img/in.png"></a></li>
+			</ul>
+		</nav>
 
-				<div class="modal fade" id="modal">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-body">
-								<button class="close glyphicon glyphicon-remove" data-dismiss="modal"></button>								
-								<h1 class="col-xs-12">Nathalie TK</h1>
-								<span class="col-xs-12">Développeuse Web</span>
-								<div class="clearfix"></div>
-								<h4 class="col-xs-12">COMPETENCES INFORMATIQUES</h4>
-									<span class="col-sm-4">Compétences principales :</span><p class="col-sm-8">Html5, CSS3, Javascript.</p>	</br>
-									<span class="col-sm-4">Outils :	</span><p class="col-sm-8"> Bootstrap, Git, jQuery.</p></br>  
-									<span class="col-sm-4">Autres :	</span><p class="col-sm-8"> PHP, MySQL, Java, Blender 3D, Photoshop.</p></br>
-
-								<h4 class="col-xs-12">FORMATIONS ET DIPLOMES</h4>                                                                                
-									<span class="col-sm-4">2015 :</span><p class="col-sm-8">Certificats Html5, CSS3, Javascript, PHP, MySQL - OPENCLASSROOMS.</p>
-									<span class="col-sm-4">2014 :</span><p class="col-sm-8">Certificat “Initiation à la programmation Java” - COURSERA.</p>
-									<span class="col-sm-4">2008 :</span><p class="col-sm-8">BTS opticien-lunetier - ICO, Bures-sur-Yvette. </p>	
-									<span class="col-sm-4">2006 :</span><p class="col-sm-8">Baccalauréat scientifique - LYCEE BLAISE PASCAL, Orsay.</p>
-								
-								<h4 class="col-xs-12">EXPERIENCES PROFESSIONNELLES</h4>
-									<span class="col-sm-4">Depuis Sept 2015 : </span><p class="col-sm-8">MERCI MA JOLIE.COM, Séoul, CORÉE DU SUD.<br/>
-												Front-End bénévole : Participation au développement du site sur Shopify,				
-												refonte des pages «Panier» et «Produit» en Html5 et CSS3.</p>
-									<span class="col-sm-4">Juil 2015 - Sept 2015 : </span><p class="col-sm-8">COTÉ JARDIN, Séoul, CORÉE DU SUD.<br/>
-												Serveuse</p>
-									<span class="col-sm-4">Dec 2012 - Fev 2015 : </span><p class="col-sm-8">OPTIQUE BEAUSEJOUR, Morsang-sur-Orge (91).<br/>
-									Gérante : Vente, gestion de stock, gestion administrative, montage, développement de la communication.</p>
-									<span class="col-sm-4">Fev 2009 - Nov 2012 : </span><p class="col-sm-8">LES OPTICIENS CONSEILS, Les Ulis (91).<br/>
-										Opticienne : Vente, montages, gestion du tiers-payant, examens de vue.</p>
-								
-
-								<h4 class="col-xs-12">LANGUES</h4>
-								<p>Anglais : Intermédiaire<br/>
-									Espagnol : Débutant<br/>
-									Coréen : Débutant<br/></p>
-
-								<h4>ACTIVITES ET CENTRES D'INTERETS</h4>
-								<p>	Peinture, Dessin, Couture, Golf, Course à pied.</p>								
-								</p>
-							</div>
-						</div>
-					</div>
+		<section class="home">
+			<div class="home__bkg" data-top="opacity:0.8;" data-top-bottom="opacity:0.1;"></div>
+			<div class="container">
+				<div class="home__box card" data-top="top:50%;" data-top-bottom="top:65%;">
+					<h1 class="home__title"><span class="js-home__name" data-previous="Nathalie Trin" data-final="Nathalie TK">Nathalie TK</span> <span class="home__subtitle js-home__subtitle">Développeuse front-end freelance</span></h1>
+					<p class="home__quote">
+						<span class="home__quote-icon">"</span>Forte de 8 ans d'expériences en entrerpises, je propose désormais mes services en tant que <strong>freelance</strong>. <br/>
+						Je suis spécialisée en <strong>React JS</strong> et en <strong>intégration CSS</strong>."
+					</p>					
 				</div>
 			</div>
+			  <div class="mouse">
+			    <div class="mouse-wheel"></div>
+			    <span></span>
+			  </div>
+		</section>
 
-
-
-			<div id="portfolio" class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-12">
-				<h1>PORTFOLIO</h1>
-				<p>Mes projets et réalisations :</p>
-				<div class="thumbnails">
-					<div class="col-xs-6 thumbnail">						
-						<a href="http://www.merci-majolie.com" target="_blank" title="merci-majolie.com">
-							<img src="img/majolie-small.jpg" alt="site MaJolie">
-							<div class="caption">
-								<p>Merci-MaJolie</p>
-								<p class="info">Refonte des pages "panier" et "produit"</p>
-							</div>
-						</a>
-					</div>					
-					<div class="col-xs-6 thumbnail">						
-						<a href="mini-jeu/mini-jeu.html" target="_blank" alt="Mini-jeu">
-							<img src="img/mini-jeu-small.jpg" alt="">
-							<div class="caption">
-								<p>Mini-jeu</p>
-								<p class="info">Projet Openclassrooms</p>
-							</div>		
-						</a>				
-					</div>
-					<div class="col-xs-6 thumbnail">
-						<a href="http://lathou.github.io/me-mots/app/"  target="_blank" alt="Mémots">					
-							<img src="img/memots-small.jpg" alt="site mé-mots">
-							<div class="caption">
-								<p>Mé-Mots</p>
-								<p class="info">Création d'un site d'aide à l'apprentissage des langues (En cours)</p>		
-							</div>	
-						</a>			
-					</div>
-					<div class="col-xs-6 thumbnail">
-						<a href="https://github.com/lathou/wrap-it"  target="_blank" alt="Wrap it Baby!">						
-							<img src="img/wrap-it-small.jpg" alt="">
-							<div class="caption">
-								<p>Wrap it Baby!</p>
-								<p class="info">Création d'un site vitrine (En cours)</p>
-							</div>		
-						</a>				
-					</div>	
-				</div>
-			</div>
-
-			<div id="contact" class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-12">
-				<h1>CONTACT</h1>
-				<form methode="post" action="">	
-					<div class="form-group col-md-5">
-						<label for="nom" class="col-xs-12 form-label text-left">Votre nom</label>
-						<input type="text" maxlength="40" name="nom" id="nom" class="form-control" required/>
-
-						<label for="prenom" class="col-xs-12 form-label text-left">Votre prénom</label>
-						<input type="text" maxlength="40" name="prenom" id="prenom" class="form-control" required/>
-
-						<label for="mail" class="col-xs-12 form-label text-left">Votre adresse e-mail</label>
-						<input type="text" maxlength="80" name="mail" id="mail" class="form-control" required/>
-						<span id="erreur" class="erreur">Veuillez entrer une adresse mail valide</span>
-						<br/>				
-					</div>
-
-					<div class="form-group col-md-7">
-						<label for="message" class="col-xs-12 form-label text-left">Votre message</label>
-						<textarea name="message" id="message" class="form-control" required></textarea>
-					</div>
-
-					<button id="sendMail" class="col-md-offset-5 col-md-2 btn btn-default">Envoyer</button>
-				</form>
+		<section class="skills" id='skills'>
+			<div class="container">
+				<h2>Mes compétences</h2>
+				<ul class="main-skills">
+					<li>
+						<img src="img/react.svg">
+						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
+						  <circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" data-bottom="stroke-dashoffset: 283%;" data-bottom-bottom="stroke-dashoffset: 56.60%;" ></circle>
+						</svg>
+						<span>80%</span>
+					</li>
+					<li>
+						<img src="img/wordpress.svg">
+						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
+						  <circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" data-bottom="stroke-dashoffset: 283%;" data-bottom-bottom="stroke-dashoffset: 56.60%;" ></circle>
+						</svg>
+						<span>80%</span>
+					</li>
+					<li>
+						<!-- dashoffset = 283*(1- percent/100) -->
+						<img src="img/HTML5CSS3Logos.svg">
+						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
+						  	<circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" data-bottom="stroke-dashoffset: 283%;" data-bottom-bottom="stroke-dashoffset: 28.3;" ></circle>
+						</svg>
+						<span>90%</span>
+					</li>
+					<li>
+						<img src="img/php.svg">
+						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
+						  <circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%"  data-bottom="stroke-dashoffset: 283%;" data-bottom-bottom="stroke-dashoffset: 141.50%;"></circle>
+						</svg>
+						<span>50%</span>
+					</li>
+				</ul>
+				<ul class="other-skills">
+					<li>Testing library</li>
+					<li>Node Sass</li>
+					<li>NodeJS</li>
+					<li>Git</li>
+					<li>Webpack</li>
+					<li>Behat</li>
+					<li>MySQL</li>
+					<li>Angular JS</li>
+					<li>Figma</li>
+					<li>Photoshop</li>
+					<li>Bootstrap</li>
+				</ul>
 			</div>
 		</section>
 
+		<section class="offers" id='offers'>
+			<div class="container">
+				<h2>Que puis-je faire pour vous ?</h2>
+				<ul class="offers__list">
+					<li class="card offer" data-700-top="transform: rotateZ(0deg);" data-650-top="transform: rotateZ(5deg);">
+						<h3 class="offer__title">Site vitrine</h3>
+						<ul>
+							<li class="offer__point">Mise en place de l'hebergement</li>
+							<li class="offer__point">Creation d'un site administrable Wordpress</li>
+							<li class="offer__point">Design personnalisé</li>
+						</ul>
+					</li>
+					<li class="card offer" data-700-top="transform: rotateZ(0deg);" data-650-top="transform: rotateZ(-2deg);">
+						<h3 class="offer__title">Développement d'applications web</h3>
+						<ul>
+							<li class="offer__point">Développement en React JS</li>
+							<li class="offer__point">Développement de composants indépendants</li>
+							<li class="offer__point">Tests unitaires et/ou tests d'intégration</li>
+						</ul>
+					</li>
+					<li class="card offer" data-700-top="transform: rotateZ(0deg);"  data-650-top="transform: rotateZ(2deg);">
+						<h3 class="offer__title">Refonte graphique</h3>
+						<ul>
+							<li class="offer__point">Refonte CSS d'un site ou d'une application web</li>
+							<li class="offer__point">Utilisation de préprocesseurs tel que nodeSass</li>
+							<li class="offer__point">Utilisation de l'Atomic design en association avec du BEM</li>
+							<li class="offer__point">Responsive design ou mobile first</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
 
+				<section class="projects" id='portfolio'>
+			<div class="container">
+				<h2>Ce que j'ai accompli</h2>
+				<div class="main-projects">
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/pro-compta.png" alt="Pro compta">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Cartesia Education (2018-2024)</h3>
+							<p class="article">Sites vitrines et applications web en React JS</p>
+							<ul>
+								<li>Site vitrine administrable</li>
+								<li>Parcours d'achat</li>
+								<li>Plateforme de cours en vidéo</li>
+								<li>Plateforme de correction devoirs</li>
+								<li>Plateforme de prise de rendez-vous et passage d'oraux à distance</li>
+								<li>Extranet</li>
+								<li>Application electron d'enregistrement vidéo</li>
+							</ul>
+							<a target="_blank" href="https://live.pro-compta.fr/" class="project__link">Voir le site</a>
+						</div>
+					</div>
 
-		<!--Footer-->
-		<footer class="col-xs-12">
-			<div class="col-lg-offset-2 col-lg-8 col-md-offset-1 col-md-10 col-xs-12 text-justify">
-				<div class="col-xs-5">
-					<h3>En savoir + sur mes certificats</h3>
-					<ul class="col-sm-4 certificats">
-						<li><a href="https://fr.coursera.org/course/initprogjava" target="_blank">Initiation en Java</a></li>
-						<li><a href="https://openclassrooms.com/courses/comprendre-le-web" target="_blank">Comprendre le web</a></li>
-						<li><a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">HTML5 et CSS3</a></li>
-						<li><a href="https://openclassrooms.com/courses/concevez-votre-site-web-avec-php-et-mysql" target="_blank">PHP et MySQL</a></li>
-					</ul>
-					<ul class="col-sm-8 certificats">						
-						<li><a href="https://openclassrooms.com/courses/les-cles-pour-reussir-son-referencement-web" target="_blank">Les clefs pour réussir son référencement web</a></li>
-						<li><a href="https://openclassrooms.com/courses/gerer-son-code-avec-git-et-github" target="_blank">Gérer son code avec git et github</a></li>
-						<li><a href="https://openclassrooms.com/courses/prenez-en-main-bootstrap" target="_blank">Prenez en main Bootstrap</a></li>
-						<li><a href="https://openclassrooms.com/courses/apprenez-a-coder-avec-javascript" target="_blank">Apprenez à coder avec Javascript</a></li>
-					</ul>
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/veezu.png" alt="Veezu">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Veezu (2023)</h3>
+							<p class="article">Site vitrine administrable</p>
+							<ul>
+								<li>Site wordpress personnalisé</li>
+								<li>Responsive web design</li>
+							</ul>
+							<a target="_blank" href="https://www.veezu.io" class="project__link">Voir le site</a>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/edenred.png" alt="Edenred">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Edenred (2018)</h3>
+							<p class="article">Modules réutilisables pour les sites corporates des différents pays</p>
+							<ul>
+								<li>Développement de modules réutilisables et indépendants</li>
+								<li>Responsive web design</li>
+							</ul>
+							<a target="_blank" href="https://www.edenred.com.uy" class="project__link">Voir le site</a>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/legrand.png" alt="Legrand">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Legrand (2017)</h3>
+							<p class="article">Site corporate administrable</p>
+							<ul>
+								<li>Développement de modules réutilisables</li>
+								<li>Mise en place d'un système de grille</li>
+								<li>Communication avec les apis de réseaux sociaux et de bourse</li>
+								<li>Carte interractive</li>
+								<li>Responsive web design</li>
+							</ul>
+							<a target="_blank" href="https://www.legrandgroup.com/fr" class="project__link">Voir le site</a>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/capgemini.png" alt="Capgemini50">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Capgemini50 (2017)</h3>
+							<p class="article">Site evenementiel pour les 50 ans de capgemini</p>
+							<ul>
+								<li>Scroll web design avec animations</li>
+								<li>Quizz</li>
+								<li>Timeline animée</li>
+								<li>Responsive web design</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/valeo.png" alt="Valeo">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Valeo (2017)</h3>
+							<p class="article">Site corporate administrable</p>
+							<ul>
+								<li>Utilisation des apis de réseaux sociaux</li>
+								<li>Communication avec les apis de réseaux sociaux et de bourse</li>
+								<li>Carte interractive</li>
+								<li>Responsive web design</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/memots.jpg" alt="site mé-mots">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Mémots (2016) - <span>Projet personnel</span></h3>
+							<p class="article">Application web d'aide à l'apprentissage des langues</p>
+							<ul>
+								<li>Gestion des utilisateurs grâce au sessionStorage et aux cookies</li>
+								<li>Manipulation du DOM avec jQuery</li>
+								<li>Gestion de base de donnée avec PHP et MySQL</li>
+								<li>Requêtes AJAX vers PHP évitant le rechargement de page</li>
+								<li>Programmation orientée objet</li>
+								<li>Responsive web design à l'aide de Bootstrap</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">		
+						<div class="thumbnail">
+							<img src="img/clavier.jpg" alt="clavier coréen">						
+						</div>		
+						
+						<div class="caption">
+							<h3 class="title">Clavier coréen (2016) - <span>Projet personnel</span></h3>
+							<p class="article">Clavier virtuel coréen en AngularJS</p>
+							<ul>
+								<li>Récupération des signes coréen et de leurs données dans un fichier JSON afin de calculer la construction des syllabes</li>
+								<li>Possibilité de choisir la langue de clavier entre français et coréen grâce à ce même fichier JSON</li>
+							</ul>
+							<a target="_blank" href="clavier/index.html" class="project__link">Voir l'application</a>
+						</div>	
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">	
+						<div class="thumbnail">
+							<img src="img/majolie.jpg" alt="site MaJolie">
+						</div>	
+						<div class="caption">
+							<h3 class="title">Merci-majolie (2015)</h3>	
+							<p class="article">Refonte des pages "panier" et "produit"</p>
+							<ul>
+								<li>Utilisation du CMS e-commerce Shopify, de ses macros et de ses objets</li>
+								<li>Intégration, en responsive, suivant maquettes</li>
+							</ul>
+						</div>				
+					</div>
 				</div>
-
-				<div class="col-xs-4">
-					<h3>Projets et créations</h3>
-					<ul class="col-sm-6 projets">
-						<li><a href="http://merci-majolie.com" target="_blank">Merci-Majolie</a></li>						
-						<li><a href="mini-jeu/mini-jeu.html" target="_blank">Projet Openclassrooms</a></li>
-						<li><a href="http://lathou.github.io/me-mots/app/" target="_blank">Mé-mots</a></li>
-						<li><a href="https://github.com/lathou/wrap-it" target="_blank">Wrap it Baby!</a></li>
-					</ul>
-				</div>
-
-				<div class="col-xs-3">
-					<h3>Navigation</h3>
-					<ul>
-						<li><a href="#accueil">Accueil</a></li>
-						<li><a href="#qui-suis-je">Qui suis-je?</a></li>
-						<li><a href="#portfolio">Portfolio</a></li>
-						<li><a href="#contact">Contact</a></li>
-					</ul>
+	
+			</div>
+		</section>
+<!-- 
+		<section class="experiences" id="experiences">
+			<div class="container">
+				<h2>Mon parcours</h2>
+				<div class="timeline">
+					<span class="timeline-line"></span>
+					<div class="events">
+						<div class="experience experience_work" data-bottom-bottom="transform:translateY(100px); opacity:0.5" data-bottom="transform:translateY(0px);opacity:1;">
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>Depuis 2025</div>
+							<div class="experience__description">
+								<h3>FREELANCE</h3> - Développeuse front&#8209;end
+							</div>
+						</div>
+						<div class="experience experience_work" data-250="transform:translateY(100px); opacity:0.5" data-350="transform:translateY(0px);opacity:1;">
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2018 - 2024</div>
+							<div class="experience__description">
+								<h3>CARTESIA EDUCATION, Paris</h3> - Développeuse front&#8209;end
+							</div>
+						</div>
+						<div class="experience experience_work" data-300="transform:translateY(100px); opacity:0.5" data-400="transform:translateY(0px);opacity:1;">
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2016 - 2018</div>
+							<div class="experience__description">
+								<h3>WORDAPPEAL, Paris</h3> - Développeuse front&#8209;end
+							</div>
+						</div>
+						<div class="experience experience_work" data-350="transform:translateY(200px); opacity:0.5" data-450="transform:translateY(0px);opacity:1;">
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2015 - 2016</div>
+							<div class="experience__description">
+								<h3>MERCI-MAJOLIE.COM, Séoul</h3> - Développeuse front&#8209;end
+							</div>
+						</div>
+						<div class="experience experience_training"  data-400="transform:translateY(200px); opacity:0.5" data-500="transform:translateY(0px);opacity:1;">
+							<div class="experience__icon"><span class="picto"><img src="img/chapo.svg"></span>2015 - 2016</div>
+							<div class="experience__description"><h3>Certificats Html5, CSS3, JavaScript, PHP, MySQL, jQuery, NodeJS</h3> - OPENCLASSROOMS</div>
+							
+						</div>
+						<div class="experience experience_work experience_secondary"  data-450="transform:translateY(200px);" data-550="transform:translateY(0px);">
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2015</div>
+							<div class="experience__description"><h3>COTÉ JARDIN, Séoul</h3> - Serveuse</div>
+						</div>
+						<div class="experience experience_training"  data-500="transform:translateY(200px);" data-600="transform:translateY(0px);">
+							<div class="experience__icon"><span class="picto"><img src="img/chapo.svg"></span>2014</div>
+							<div class="experience__description"><h3>Certificat “Initiation à la programmation Java”</h3> - COURSERA</div>
+							
+						</div>
+						<div class="experience experience_work experience_secondary"  data-550="transform:translateY(200px);" data-650="transform:translateY(0px);">
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2012 - 2015</div>
+							<div class="experience__description"><h3>OPTIQUE BEAUSEJOUR, Morsang-sur-Orge</h3> - Gérante</div>
+						</div>
+						<div class="experience experience_work experience_secondary"  data-600="transform:translateY(100px);" data-700="transform:translateY(0px);">
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2009 - 2012</div>
+							<div class="experience__description"><h3>LES OPTICIENS CONSEILS, Les Ulis</h3> - Opticienne</div>
+						</div>
+						<div class="experience experience_training experience_secondary"  data-650="transform:translateY(100px);" data-750="transform:translateY(0px);">
+							<div class="experience__icon"><span class="picto"><img src="img/chapo.svg"></span>2008</div>
+							<div class="experience__description"><h3>BTS opticien-lunetier</h3> - ICO, Bures-sur-Yvette</div>
+							
+						</div>
+						<div class="experience experience_training"  data-700="transform:translateY(100px);" data-800="transform:translateY(0px);">
+							<div class="experience__icon"><span class="picto"><img src="img/chapo.svg"></span>2006</div>
+							<div class="experience__description"><h3>Baccalauréat scientifique</h3> - LYCEE BLAISE PASCAL, Orsay</div>
+							
+						</div>												
+					</div>
 				</div>
 			</div>
-		</footer>
+		</section> -->
 
-		<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
-		<script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
-		<script src = "js/ajax-mail.js"></script>
-		
-		<script>
-    	// Scrollspy fluide
-	      $(function () {
-	        $('header a').on('click', function(e) {
-	          e.preventDefault();
-	          var hash = this.hash;
-	          $('html, body').animate({
-	            scrollTop: $(this.hash).offset().top
-	          }, 1000, function(){
-	            window.location.hash = hash;
-	          });
-	        });
-	      });
-	    </script>
+		<section class="contact" id="contact">
+			<h2>Contactez-moi</h2>
+			<div class="contact__links">
+				<a class="contact__link" target="_blank" href="mailto:nathalie.tk.dev@gmail.com">
+					<img class="contact__img" src="img/mail.svg" alt="Email">
+					nathalie.tk.dev@gmail.com
+				</a>
+				<a class="contact__link" target="_blank" href="https://www.linkedin.com/in/nathalie-trinh-khanh-64162210a/">
+					<img class="contact__img" src="img/in.png" alt="Email">
+					Linkedin
+				</a>
+			</div>
+
+		</section>
+
+		<script type="text/javascript" src="js/skrollr.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</body>
 </html>

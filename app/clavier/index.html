@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+	<head>
+		<title>Clavier</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="style.css"/>
+	</head>
+
+	<body ng-app="monApp">
+		<div ng-controller="ecrire" ng-init="getLettres('co')">
+
+			<input type="text" id="saisie" ng-model="saisie" ng-trim=false ng-keydown="remiseAZeroTotale()" autofocus/>
+			<input type="checkbox" id="checkbox" ng-model="checkbox"/><label for="checkbox">Clavier Virtuel</label>
+
+			<div class="clavier" ng-show="checkbox">
+				<select ng-model="langue" ng-change="getLettres(langue)">
+					<option value="fr" >Français</option>
+					<option value="co" selected>Coréen</option>
+				</select>
+
+				<div class="lettres">
+					<button class="touche" ng-repeat="lettre in lettres" ng-click="tapper(lettre, langue)">{{lettre.lettre}}</button>
+				</div>
+				<button class="touche" ng-click="maj()" ng-class="{active : majActive}">↑</button>
+				<button class="touche touche-espace" ng-click="espace()"></button>
+				<button class="touche" ng-click="effacer()">←</button>
+			</div>
+
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+		<script src="clavier.js"></script>
+	</body>
+</html>

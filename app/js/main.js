@@ -1,40 +1,109 @@
+window.addEventListener('load', function(){
 
-$(function(){
+	let hasSkrollr = false;
+	document.body.classList.add('js-enabled');
 
-	//Gestion des tailles et alignement des thumbnails
+	// Start animation
+	if(window.scrollY < 100){
 
-	setTimeout(resizeThumbnails, 500);
-	window.addEventListener('resize', resizeThumbnails, false);
+		const homeElement = document.querySelector('.home');
+		homeElement.addEventListener('click', function(){
+			document.body.classList.remove('animate');
+			initSkrollr();
+		});
 
-	function resizeThumbnails(){
-		var maxHeight = 0;
-		var thumbnails = document.querySelectorAll('.thumbnail');
+		var nameElement = document.querySelector('.js-home__name');
+		var titleElement = document.querySelector('.js-home__subtitle');
 
-		for(var i = 0; i < thumbnails.length; i++){
-			thumbnails[i].style.height = 'auto';
-		}
+		var previousName = nameElement.getAttribute('data-previous');
+		var finalName = nameElement.getAttribute('data-final');
+		var commonNameLettersIndex = 0;
+		var nameLength = previousName.length;
+		var title = titleElement.innerText;
+		var typingDelay = 70;
 
-		for(var i = 0; i < thumbnails.length; i++){
-			if(thumbnails[i].offsetHeight > maxHeight){
-				maxHeight = thumbnails[i].offsetHeight;
+		(async function initName(){
+			new Promise((resolve) => {
+				nameElement.innerText = '';
+				titleElement.innerText = '';
+				resolve()
+			})
+		})();
+
+		(async function writeName(){
+			for (var i = 0; i < nameLength; i++) {
+				await addLetter(nameElement, previousName[i], true);
+				if (finalName.substring(0, i) === previousName.substring(0, i)) {
+					commonNameLettersIndex = i;
+				}
 			}
-		}
-		
-		for(var i = 0; i < thumbnails.length; i++){
-				thumbnails[i].style.height = maxHeight+ "px";
+
+			for (var i = previousName.length; i >= commonNameLettersIndex; i--) {
+				await removeLetter(nameElement, i);
 			}
-		}
 
+			for (var i = commonNameLettersIndex; i < finalName.length; i++) {
+				await addLetter(nameElement, finalName[i], i !== finalName.length -1);
+			}
 
-	//Fermeture du menu responsive lors d'un click sur un onglet
-	
-	var navbar = document.querySelector('.navbar-collapse');
-	var liMenu = navbar.querySelectorAll('li');
-	
-	for(var i = 0; i < liMenu.length; i++){
-		liMenu[i].addEventListener('click', function(){
-			navbar.className = 'navbar-collapse collapse';
-			navbar.setAttribute('aria-expanded', 'false');
-		}, false);
+			for (var i = 0; i < title.length; i++) {
+				await addLetter(titleElement, title[i], i !== title.length -1);
+			}
+
+			initSkrollr();
+		})();
+
+	}else {
+		initSkrollr();
 	}
+
+	function initSkrollr() {
+		document.body.classList.remove('animate');
+		if(window.innerWidth > 768){
+			!hasSkrollr && skrollr.init();
+			hasSkrollr = true;
+		}
+	}
+
+	async function addLetter(where, letter, shouldShowTypingCursor){
+		return new Promise((resolve) => {
+			setTimeout(function(){
+				where.innerText = where.innerText.replace('|', '') + letter.replace(' ', '\u00a0') + (shouldShowTypingCursor ? '|' : '');
+				resolve();
+			}, typingDelay)
+		})
+	}
+
+	function removeLetter(where, id){
+		return new Promise((resolve) => {
+			setTimeout(function(){
+				where.innerText = where.innerText.substring(0, id);
+				resolve();
+			}, typingDelay)
+		})
+	}
+
+	//Menu
+	window.addEventListener('scroll', function(){
+		const menuElement = document.querySelector('.menu');
+
+		if(window.scrollY > 100){
+			menuElement.classList.add('menu_bkg');
+		} else {
+			menuElement.classList.remove('menu_bkg');
+		}
+
+	})
+
+	document.querySelectorAll('nav a').forEach(link => {
+		if(link.getAttribute('href').indexOf('#') < 0) return;
+		link.addEventListener('click', function(e){
+			e.preventDefault();
+			const anchor = document.querySelector(link.getAttribute('href'))
+			window.scroll({
+			  top: anchor.offsetTop - 60,
+			  behavior: "smooth",
+			});
+		})
+	})
 });
