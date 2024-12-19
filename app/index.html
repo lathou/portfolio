@@ -4,68 +4,329 @@
 		<title>Portfolio</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width"/>
-		<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Abel|Kaushan+Script" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,300;0,500&display=block" rel="stylesheet">
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	</head>
 	
 	<body class="animate">
-		<nav class="container">
-			<ul >
-				<li><a href="#1">Formations & Experiences</a> • </li>
-				<li><a href="#2">Compétences</a> • </li>
-				<li><a href="#3">Portfolio</a> • </li>
-				<li><a taret="_blank" href="https://www.linkedin.com/in/nathalie-trinh-khanh-64162210a/"><img src="img/in.png"></a></li>
+		<nav class="menu">
+			<ul class="container">
+				<li><a href="#skills">Compétences</a> • </li>
+				<li><a href="#offers">Services</a> • </li>
+				<li><a href="#portfolio">Portfolio</a> • </li>
+				<li><a href="#contact">Contact</a> • </li>
+				<!-- <li><a href="#experiences">Mon parcours</a> • </li> -->
+				<li><a target="_blank" href="https://www.linkedin.com/in/nathalie-trinh-khanh-64162210a/"><img src="img/in.png"></a></li>
 			</ul>
 		</nav>
 
 		<section class="home">
-			<div class="home__bkg" data-0="opacity:0.8;" data-100="opacity:0.5;" data-1300="opacity:0.2;"></div>
+			<div class="home__bkg" data-top="opacity:0.8;" data-top-bottom="opacity:0.1;"></div>
 			<div class="container">
-				<div class="home__box" data-0="top:50%;" data-300="top:55%;">
-					<h1>Nathalie TK <span class="home__subtitle">Développeuse Front-End</span></h1>
+				<div class="home__box card" data-top="top:50%;" data-top-bottom="top:65%;">
+					<h1 class="home__title"><span class="js-home__name" data-previous="Nathalie Trin" data-final="Nathalie TK">Nathalie TK</span> <span class="home__subtitle js-home__subtitle">Développeuse front-end freelance</span></h1>
 					<p class="home__quote">
-						<span class="home__quote-icon">"</span> Anciennement opticienne, il a toujours été dans ma personnalité de vouloir créer, construire des choses de mes propres mains. <br/>Souhaitant relever de nouveaux défis, j'ai entrepris une reconversion pour un métier qui me correspond bien plus : <strong>développeuse&nbsp;front-end.</strong>"
+						<span class="home__quote-icon">"</span>Forte de 8 ans d'expériences en entrerpises, je propose désormais mes services en tant que <strong>freelance</strong>. <br/>
+						Je suis spécialisée en <strong>React JS</strong> et en <strong>intégration CSS</strong>."
 					</p>					
 				</div>
 			</div>
-			  <div class="mouse fixed">
+			  <div class="mouse">
 			    <div class="mouse-wheel"></div>
 			    <span></span>
 			  </div>
 		</section>
 
-		<section class="experiences" id="1">
+		<section class="skills" id='skills'>
 			<div class="container">
-				<h2>Formations & Experiences</h2>
+				<h2>Mes compétences</h2>
+				<ul class="main-skills">
+					<li>
+						<img src="img/react.svg">
+						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
+						  <circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" data-bottom="stroke-dashoffset: 283%;" data-bottom-bottom="stroke-dashoffset: 56.60%;" ></circle>
+						</svg>
+						<span>80%</span>
+					</li>
+					<li>
+						<img src="img/wordpress.svg">
+						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
+						  <circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" data-bottom="stroke-dashoffset: 283%;" data-bottom-bottom="stroke-dashoffset: 56.60%;" ></circle>
+						</svg>
+						<span>80%</span>
+					</li>
+					<li>
+						<!-- dashoffset = 283*(1- percent/100) -->
+						<img src="img/HTML5CSS3Logos.svg">
+						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
+						  	<circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" data-bottom="stroke-dashoffset: 283%;" data-bottom-bottom="stroke-dashoffset: 28.3;" ></circle>
+						</svg>
+						<span>90%</span>
+					</li>
+					<li>
+						<img src="img/php.svg">
+						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
+						  <circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%"  data-bottom="stroke-dashoffset: 283%;" data-bottom-bottom="stroke-dashoffset: 141.50%;"></circle>
+						</svg>
+						<span>50%</span>
+					</li>
+				</ul>
+				<ul class="other-skills">
+					<li>Testing library</li>
+					<li>Node Sass</li>
+					<li>NodeJS</li>
+					<li>Git</li>
+					<li>Webpack</li>
+					<li>Behat</li>
+					<li>MySQL</li>
+					<li>Angular JS</li>
+					<li>Figma</li>
+					<li>Photoshop</li>
+					<li>Bootstrap</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="offers" id='offers'>
+			<div class="container">
+				<h2>Que puis-je faire pour vous ?</h2>
+				<ul class="offers__list">
+					<li class="card offer" data-700-top="transform: rotateZ(0deg);" data-650-top="transform: rotateZ(5deg);">
+						<h3 class="offer__title">Site vitrine</h3>
+						<ul>
+							<li class="offer__point">Mise en place de l'hebergement</li>
+							<li class="offer__point">Creation d'un site administrable Wordpress</li>
+							<li class="offer__point">Design personnalisé</li>
+						</ul>
+					</li>
+					<li class="card offer" data-700-top="transform: rotateZ(0deg);" data-650-top="transform: rotateZ(-2deg);">
+						<h3 class="offer__title">Développement d'applications web</h3>
+						<ul>
+							<li class="offer__point">Développement en React JS</li>
+							<li class="offer__point">Développement de composants indépendants</li>
+							<li class="offer__point">Tests unitaires et/ou tests d'intégration</li>
+						</ul>
+					</li>
+					<li class="card offer" data-700-top="transform: rotateZ(0deg);"  data-650-top="transform: rotateZ(2deg);">
+						<h3 class="offer__title">Refonte graphique</h3>
+						<ul>
+							<li class="offer__point">Refonte CSS d'un site ou d'une application web</li>
+							<li class="offer__point">Utilisation de préprocesseurs tel que nodeSass</li>
+							<li class="offer__point">Utilisation de l'Atomic design en association avec du BEM</li>
+							<li class="offer__point">Responsive design ou mobile first</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+				<section class="projects" id='portfolio'>
+			<div class="container">
+				<h2>Ce que j'ai accompli</h2>
+				<div class="main-projects">
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/pro-compta.png" alt="Pro compta">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Cartesia Education (2018-2024)</h3>
+							<p class="article">Sites vitrines et applications web en React JS</p>
+							<ul>
+								<li>Site vitrine administrable</li>
+								<li>Parcours d'achat</li>
+								<li>Plateforme de cours en vidéo</li>
+								<li>Plateforme de correction devoirs</li>
+								<li>Plateforme de prise de rendez-vous et passage d'oraux à distance</li>
+								<li>Extranet</li>
+								<li>Application electron d'enregistrement vidéo</li>
+							</ul>
+							<a target="_blank" href="https://live.pro-compta.fr/" class="project__link">Voir le site</a>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/veezu.png" alt="Veezu">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Veezu (2023)</h3>
+							<p class="article">Site vitrine administrable</p>
+							<ul>
+								<li>Site wordpress personnalisé</li>
+								<li>Responsive web design</li>
+							</ul>
+							<a target="_blank" href="https://www.veezu.io" class="project__link">Voir le site</a>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/edenred.png" alt="Edenred">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Edenred (2018)</h3>
+							<p class="article">Modules réutilisables pour les sites corporates des différents pays</p>
+							<ul>
+								<li>Développement de modules réutilisables et indépendants</li>
+								<li>Responsive web design</li>
+							</ul>
+							<a target="_blank" href="https://www.edenred.com.uy" class="project__link">Voir le site</a>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/legrand.png" alt="Legrand">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Legrand (2017)</h3>
+							<p class="article">Site corporate administrable</p>
+							<ul>
+								<li>Développement de modules réutilisables</li>
+								<li>Mise en place d'un système de grille</li>
+								<li>Communication avec les apis de réseaux sociaux et de bourse</li>
+								<li>Carte interractive</li>
+								<li>Responsive web design</li>
+							</ul>
+							<a target="_blank" href="https://www.legrandgroup.com/fr" class="project__link">Voir le site</a>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/capgemini.png" alt="Capgemini50">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Capgemini50 (2017)</h3>
+							<p class="article">Site evenementiel pour les 50 ans de capgemini</p>
+							<ul>
+								<li>Scroll web design avec animations</li>
+								<li>Quizz</li>
+								<li>Timeline animée</li>
+								<li>Responsive web design</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/valeo.png" alt="Valeo">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Valeo (2017)</h3>
+							<p class="article">Site corporate administrable</p>
+							<ul>
+								<li>Utilisation des apis de réseaux sociaux</li>
+								<li>Communication avec les apis de réseaux sociaux et de bourse</li>
+								<li>Carte interractive</li>
+								<li>Responsive web design</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">
+						<div class="thumbnail">
+							<img src="img/memots.jpg" alt="site mé-mots">						
+						</div>	
+						
+						<div class="caption">
+							<h3 class="title">Mémots (2016) - <span>Projet personnel</span></h3>
+							<p class="article">Application web d'aide à l'apprentissage des langues</p>
+							<ul>
+								<li>Gestion des utilisateurs grâce au sessionStorage et aux cookies</li>
+								<li>Manipulation du DOM avec jQuery</li>
+								<li>Gestion de base de donnée avec PHP et MySQL</li>
+								<li>Requêtes AJAX vers PHP évitant le rechargement de page</li>
+								<li>Programmation orientée objet</li>
+								<li>Responsive web design à l'aide de Bootstrap</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">		
+						<div class="thumbnail">
+							<img src="img/clavier.jpg" alt="clavier coréen">						
+						</div>		
+						
+						<div class="caption">
+							<h3 class="title">Clavier coréen (2016) - <span>Projet personnel</span></h3>
+							<p class="article">Clavier virtuel coréen en AngularJS</p>
+							<ul>
+								<li>Récupération des signes coréen et de leurs données dans un fichier JSON afin de calculer la construction des syllabes</li>
+								<li>Possibilité de choisir la langue de clavier entre français et coréen grâce à ce même fichier JSON</li>
+							</ul>
+							<a target="_blank" href="clavier/index.html" class="project__link">Voir l'application</a>
+						</div>	
+					</div>
+
+					<div class="card" data-300-bottom="top:100px;opacity:0;" data-100-bottom="top:0px;opacity:1;">	
+						<div class="thumbnail">
+							<img src="img/majolie.jpg" alt="site MaJolie">
+						</div>	
+						<div class="caption">
+							<h3 class="title">Merci-majolie (2015)</h3>	
+							<p class="article">Refonte des pages "panier" et "produit"</p>
+							<ul>
+								<li>Utilisation du CMS e-commerce Shopify, de ses macros et de ses objets</li>
+								<li>Intégration, en responsive, suivant maquettes</li>
+							</ul>
+						</div>				
+					</div>
+				</div>
+	
+			</div>
+		</section>
+<!-- 
+		<section class="experiences" id="experiences">
+			<div class="container">
+				<h2>Mon parcours</h2>
 				<div class="timeline">
 					<span class="timeline-line"></span>
 					<div class="events">
+						<div class="experience experience_work" data-bottom-bottom="transform:translateY(100px); opacity:0.5" data-bottom="transform:translateY(0px);opacity:1;">
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>Depuis 2025</div>
+							<div class="experience__description">
+								<h3>FREELANCE</h3> - Développeuse front&#8209;end
+							</div>
+						</div>
 						<div class="experience experience_work" data-250="transform:translateY(100px); opacity:0.5" data-350="transform:translateY(0px);opacity:1;">
-							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>Depuis fév 2018</div>
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2018 - 2024</div>
 							<div class="experience__description">
 								<h3>CARTESIA EDUCATION, Paris</h3> - Développeuse front&#8209;end
 							</div>
 						</div>
 						<div class="experience experience_work" data-300="transform:translateY(100px); opacity:0.5" data-400="transform:translateY(0px);opacity:1;">
-							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>Juin 2016 - fév. 2018</div>
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2016 - 2018</div>
 							<div class="experience__description">
 								<h3>WORDAPPEAL, Paris</h3> - Développeuse front&#8209;end
 							</div>
 						</div>
 						<div class="experience experience_work" data-350="transform:translateY(200px); opacity:0.5" data-450="transform:translateY(0px);opacity:1;">
-							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>Sept. 2015 - fév. 2016</div>
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2015 - 2016</div>
 							<div class="experience__description">
-								<h3>MERCI-MAJOLIE.COM, Séoul</h3> - Développeuse front&#8209;end (bénévole)
+								<h3>MERCI-MAJOLIE.COM, Séoul</h3> - Développeuse front&#8209;end
 							</div>
 						</div>
 						<div class="experience experience_training"  data-400="transform:translateY(200px); opacity:0.5" data-500="transform:translateY(0px);opacity:1;">
-							<div class="experience__icon"><span class="picto"><img src="img/chapo.svg"></span>Sept. 2015 - fév. 2016</div>
+							<div class="experience__icon"><span class="picto"><img src="img/chapo.svg"></span>2015 - 2016</div>
 							<div class="experience__description"><h3>Certificats Html5, CSS3, JavaScript, PHP, MySQL, jQuery, NodeJS</h3> - OPENCLASSROOMS</div>
 							
 						</div>
 						<div class="experience experience_work experience_secondary"  data-450="transform:translateY(200px);" data-550="transform:translateY(0px);">
-							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>Juil. - Sept. 2015</div>
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2015</div>
 							<div class="experience__description"><h3>COTÉ JARDIN, Séoul</h3> - Serveuse</div>
 						</div>
 						<div class="experience experience_training"  data-500="transform:translateY(200px);" data-600="transform:translateY(0px);">
@@ -74,11 +335,11 @@
 							
 						</div>
 						<div class="experience experience_work experience_secondary"  data-550="transform:translateY(200px);" data-650="transform:translateY(0px);">
-							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>Déc. 2012 - fév. 2015</div>
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2012 - 2015</div>
 							<div class="experience__description"><h3>OPTIQUE BEAUSEJOUR, Morsang-sur-Orge</h3> - Gérante</div>
 						</div>
 						<div class="experience experience_work experience_secondary"  data-600="transform:translateY(100px);" data-700="transform:translateY(0px);">
-							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>Fév. 2009 - Nov. 2012</div>
+							<div class="experience__icon"><span class="picto"><img src="img/job.svg"></span>2009 - 2012</div>
 							<div class="experience__description"><h3>LES OPTICIENS CONSEILS, Les Ulis</h3> - Opticienne</div>
 						</div>
 						<div class="experience experience_training experience_secondary"  data-650="transform:translateY(100px);" data-750="transform:translateY(0px);">
@@ -94,139 +355,23 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
 
-		<section class="skills" id='2'>
-			<div class="container">
-				<h2>Compétences</h2>
-				<ul class="main-skills">
-					<li>
-						<img src="img/HTML5CSS3Logos.svg">
-						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
-						  	<circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" stroke-dashoffset="283%"></circle>
-						</svg>
-						<span>80%</span>
-					</li>
-					<li>
-						<img src="img/js.svg">
-						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
-						  <circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" stroke-dashoffset="283%"></circle>
-						</svg>
-						<span>60%</span>
-					</li>
-					<li>
-						<img src="img/php.svg">
-						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
-						  <circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" stroke-dashoffset="283%"></circle>
-						</svg>
-						<span>50%</span>
-					</li>
-					<li>
-						<img src="img/photoshop-cc.svg">
-						<svg width="180" height="180" viewport="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-							<circle class="bar-background" r="45%" cx="50%" cy="50%" fill="transparent"></circle>
-						  <circle class="bar" r="45%" cx="50%" cy="50%" fill="transparent" stroke-dasharray="283%" stroke-dashoffset="283%"></circle>
-						</svg>
-						<span>80%</span>
-					</li>
-				</ul>
-				<ul class="other-skills">
-					
-					<li>JQuery</li>
-					<li>React JS</li>
-					<li>Angular JS</li>
-					<li>NodeJS</li>
-					<li>Gulp</li>
-					<li>SASS</li>
-					<li>Bootstrap</li>
-					<li>MySQL</li>
-					<li>Wordpress</li>
-					<li>Git</li>
-					<li>Java</li>
-					<li>Illustrator</li>
-				</ul>
+		<section class="contact" id="contact">
+			<h2>Contactez-moi</h2>
+			<div class="contact__links">
+				<a class="contact__link" target="_blank" href="mailto:nathalie.tk.dev@gmail.com">
+					<img class="contact__img" src="img/mail.svg" alt="Email">
+					nathalie.tk.dev@gmail.com
+				</a>
+				<a class="contact__link" target="_blank" href="https://www.linkedin.com/in/nathalie-trinh-khanh-64162210a/">
+					<img class="contact__img" src="img/in.png" alt="Email">
+					Linkedin
+				</a>
 			</div>
+
 		</section>
 
-		<section class="projects" id='3'>
-			<div class="container">
-				<h2>Portfolio</h2>
-				<div class="main-projects">
-
-					<a target="_blank" href="http://www.merci-majolie.com" class="card">	
-						<div class="thumbnail">
-							<img src="img/majolie.jpg" alt="site MaJolie">
-							
-							<div class="caption">
-								<p class="article">Refonte des pages "panier" et "produit" d'un site de vente de bijoux en ligne</p>
-								<ul>
-									<li>Utilisation du CMS e-commerce Shopify, de ses macros et de ses objets</li>
-									<li>Intégration, en responsive, suivant maquettes pour la refonte de pages</li>
-									<li>Technos utilisées : <strong>Html, CSS3, javascript, jQuery</strong></li>
-								</ul>
-							</div>						
-						</div>	
-						<p class="title">Merci-majolie (2015)</p>				
-					</a>	
-
-					<a target="_blank" href="https://memots.herokuapp.com/" class="card">
-						<div class="thumbnail">
-							<img src="img/memots.jpg" alt="site mé-mots">
-						
-							<div class="caption">
-								<p class="article">Création d'un site d'aide à l'apprentissage des langues</p>
-								<ul>
-									<li>Gestion des utilisateurs grâce au sessionStorage et aux cookies</li>
-									<li>Manipulation du DOM avec jQuery</li>
-									<li>Gestion de base de donnée avec PHP et MySQL</li>
-									<li>Requêtes AJAX vers PHP évitant le rechargement de page</li>
-									<li>Programmation orientée objet</li>
-									<li>Responsive web design à l'aide de Bootstrap</li>
-									<li>Technos utilisées : <strong>Html, CSS3, bootstrap, jQuery, PHP, MySQL, LESS</strong></li>
-								</ul>
-							</div>						
-						</div>	
-						<p class="title">Mémots (2016) - <span>Projet personnel</span></p>
-					</a>
-
-					<a target="_blank" href="clavier/index.html" class="card">		
-						<div class="thumbnail">
-							<img src="img/clavier.jpg" alt="clavier coréen">
-							
-							<div class="caption">
-								<p class="article">Création d'un clavier virtuel coréen</p>
-								<ul>
-									<li>Récupération des signes coréen et de leurs données dans un fichier JSON afin de calculer la construction des syllabes</li>
-									<li>Possibilité de choisir la langue de clavier entre français et coréen grâce à ce même fichier JSON</li>
-									<li>Technos utilisées : <strong>Html, CSS3, AngularJS</strong></li>
-								</ul>
-							</div>							
-						</div>		
-						<p class="title">Clavier coréen (2016) - <span>Projet personnel</span></p>
-					</a>
-
-					<div class="card">	
-						<div class="thumbnail">
-							<img src="img/pmo.jpg" alt="clavier coréen">
-							
-							<div class="caption">
-								<p class="article">Création d'un outil de gestion de projet utilisable en local</p>
-								<ul>
-									<li>Création d'un serveur nodeJS et stockage des données dans un fichier JSON</li>
-									<li>Technos utilisées : <strong>Html, CSS3, nodeJS, javascript natif</strong></li>
-								</ul>
-							</div>		
-						</div>			
-						<p class="title">Outil PMO (en cours) - <span>Projet personnel</span></p>		
-					</div>
-				</div>
-	
-			</div>
-		</section>
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 		<script type="text/javascript" src="js/skrollr.min.js"></script>
 		<script type="text/javascript" src="js/main.js"></script>
 	</body>
