@@ -1,6 +1,6 @@
 :root {
-	--dark-color: #90B7AE;
-  --light-color: #eedbad;;
+	--dark-color: #689793;
+  --light-color: #fbdfbb;;
   --home-bkg: #a86e59;
   --body-bkg: #ffffff;
   --border-width: 3px;
@@ -90,7 +90,7 @@ nav ul li{
 	vertical-align: top;
 }
 nav ul li a{
-	color:#fff;
+	color: inherit;
 	padding : 0 5px;
 	font-size:0.8rem;
 	text-transform: uppercase;
