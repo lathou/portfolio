@@ -1,7 +1,7 @@
 :root {
-  --dark-color: #2b5d71;
-  --light-color: #ffb69a;
-  --home-bkg: #a86e59;
+	--dark-color: #6ba6ac;
+  --light-color: #f2d9b4;;
+  --home-bkg: #9b7b63;
   --body-bkg: #ffffff;
   --border-width: 3px;
 }
@@ -41,7 +41,7 @@ a{
 
 h1{
 	margin-top: 0;
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Kaushan Script', script, cursive;
 	font-size: 4rem;
 }
 
@@ -90,7 +90,7 @@ nav ul li{
 	vertical-align: top;
 }
 nav ul li a{
-	color:#fff;
+	color: inherit;
 	padding : 0 5px;
 	font-size:0.8rem;
 	text-transform: uppercase;
@@ -128,7 +128,6 @@ body.animate .menu {
 
 .menu_bkg{
 	background: var(--dark-color);
-	border-bottom: var(--border-width) solid white;
 }
 
 .menu .container {
@@ -464,6 +463,16 @@ section.skills{
 	stroke-width : 15px;
 	transition: 1.5s ease-out;
 }
+.skills ul.main-skills li .bar_80 {
+	stroke-dashoffset: 56.60%;
+}
+.skills ul.main-skills li .bar_90 {
+	stroke-dashoffset: 28.3%;
+}
+.skills ul.main-skills li .bar_50 {
+	stroke-dashoffset: 141.50%;
+}
+
 .skills ul.main-skills li span{
 	position: absolute;
 	bottom: -40px;
@@ -596,7 +605,10 @@ section.contact{
 	/*Home*/
 	.home__bkg{
 		opacity: 0.5;
+		background: url('../img/home1-min-m.jpg') no-repeat center;
+		background-size: cover;
 	}
+
 	.home__box{
 		min-width: 100px;
 		width: 80%;

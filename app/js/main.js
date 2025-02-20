@@ -20,7 +20,7 @@ window.addEventListener('load', function(){
 		var commonNameLettersIndex = 0;
 		var nameLength = previousName.length;
 		var title = titleElement.innerText;
-		var typingDelay = 70;
+		var typingDelay = 50;
 
 		(async function initName(){
 			new Promise((resolve) => {
